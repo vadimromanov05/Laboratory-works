@@ -207,6 +207,31 @@ vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
 $ echo 'Hello, world!'
 Hello, world!
 
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ tar -cf first-archive.tar /d/Github/Laboratory-works/LW2/comands.md
+tar: Removing leading `/' from member names
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works (master)
+$ ssh v_romanov@185.5.249.140
+v_romanov@185.5.249.140's password:
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-162-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+v_romanov@vds2476450:~$
+
 
 
 ```

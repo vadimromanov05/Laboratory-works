@@ -1,3 +1,10 @@
+# Отчёт по лабораторной работе №2
+
+---
+
+## по курсу "Фундаментальная информатика"
+
+
 Студент группы М8О-108Б-23 Романов Вадим Михайлович  
 
 Работа выполнена  
@@ -45,7 +52,7 @@
         6) Выложить все мои изыскания на Github через соединение данных в ветках  
     5. Сценарий выполнения работы:  
         Список не описанных мною ранее команд с пояснениями:  
-
+    |--------------|---------------------------------|
     |"who"         | "отобразить данные пользователя"|
     |"pwd"         | "оказать моё местонахождение в папке"|
     |"ls"          | "показать файлы и папки в текущем файле"|
@@ -200,21 +207,6 @@ vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
 $ echo 'Hello, world!'
 Hello, world!
 
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh -p vadim@HuaweiRomanov
-Bad port 'vadim@HuaweiRomanov'
-
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh-keygen -t ed25519 -C "vadim.romanov.05@list.ru"
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/c/Users/vadim/.ssh/id_ed25519):
-
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh-copy-id vadim@HuaweiRomanov
-/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/c/Users/vadim/.ssh/id_ed25519.pub"
-/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter
-
-/usr/bin/ssh-copy-id: ERROR: ssh: connect to host huaweiromanov port 22: Connect
 
 
 ```

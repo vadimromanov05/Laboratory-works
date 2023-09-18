@@ -279,21 +279,27 @@ vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
 $ echo 'Hello, world!'
 Hello, world!
 
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh -p vadim@HuaweiRomanov
-Bad port 'vadim@HuaweiRomanov'
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works (master)
+$ ssh v_romanov@185.5.249.140
+v_romanov@185.5.249.140's password:
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-162-generic x86_64)
 
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh-keygen -t ed25519 -C "vadim.romanov.05@list.ru"
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/c/Users/vadim/.ssh/id_ed25519):
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
 
-vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
-$ ssh-copy-id vadim@HuaweiRomanov
-/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/c/Users/vadim/.ssh/id_ed25519.pub"
-/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter
 
-/usr/bin/ssh-copy-id: ERROR: ssh: connect to host huaweiromanov port 22: Connect
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+v_romanov@vds2476450:~$
+
 
 
 ```

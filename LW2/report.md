@@ -237,6 +237,60 @@ usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
             [-J destination] [-l limit] [-o ssh_option] [-P port]
             [-S program] source ... target
 
+<<<<<<< HEAD
+=======
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ scp /d/Github/Laboratory-works/LW2/first-archive.tar v_romanov@185.5.249.140:~
+v_romanov@185.5.249.140's password:
+Permission denied, please try again.
+v_romanov@185.5.249.140's password:
+first-archive.tar                             100%   20KB 228.4KB/s   00:00
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ ssh v_romanov@185.5.249.140                                                   v_romanov@185.5.249.140's password:
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-162-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+New release '22.04.3 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+Last login: Mon Sep 25 09:48:21 2023 from 178.176.73.139
+
+v_romanov@vds2476450:~/LW2$ tar -xvf first-archive.tar
+comands.md
+v_romanov@vds2476450:~/LW2$ ls
+comands.md  first-archive.tar
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ scp v_romanov@185.5.249.140:~/LW2/comands.md /d/Github/Laboratory-works/
+v_romanov@185.5.249.140's password:
+comands.md                                                                                                                                                                      100% 9305   115.1KB/s   00:00
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ git add --all
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ git checkout new-task
+Switched to branch 'new-task'
+Your branch is up to date with 'origin/new-task'.
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (new-task)
+$ git add --all
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (new-task)
+$ git commit -m'Занести финальные изменения в новую ветку'
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (new-task)
+$ git push
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (new-task)
+$ git checkout master
+
+vadim@HuaweiRomanov MINGW64 /d/Github/Laboratory-works/LW2 (master)
+$ git merge new-task
+>>>>>>> new-task
 
 
 ```

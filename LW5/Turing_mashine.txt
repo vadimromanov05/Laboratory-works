@@ -1,0 +1,47 @@
+00, ,<,run
+
+run,0,<,run run,1,<,run run,2,<,run run,3,<,run run,4,<,run run,5,<,run run,6,<,run run,7,<,run run,8,<,run run,9,<,run run, ,>,replace
+
+01, ,>,replace
+
+replace,0,>,a replace,1,>,b replace,2,>,c replace,3,>,d replace,4,>,e replace,5,>,f replace,6,>,g replace,7,>,h replace,8,>,i replace,9,>,j
+
+02, ,>,a
+
+a,0,>,a a,1,>,a a,2,>,a a,3,>,a a,4,>,a a,5,>,a a,6,>,a a,7,>,a a,8,>,a a,9,>,a
+
+03, ,>,b
+
+b,0,>,b b,1,>,b b,2,>,b b,3,>,b b,4,>,b b,5,>,b b,6,>,b b,7,>,b b,8,>,b b,9,>,b
+
+04, ,>,c
+
+c,0,>,c c,1,>,c c,2,>,c c,3,>,c c,4,>,c c,5,>,c c,6,>,c c,7,>,c c,8,>,c c,9,>,c
+
+05, ,>,d
+
+d,0,>,d d,1,>,d d,2,>,d d,3,>,d d,4,>,d d,5,>,d d,6,>,d d,7,>,d d,8,>,d d,9,>,d
+
+06, ,>,e
+
+e,0,>,e e,1,>,e e,2,>,e e,3,>,e e,4,>,e e,5,>,e e,6,>,e e,7,>,e e,8,>,e e,9,>,e
+
+07, ,>,f
+
+f,0,>,f f,1,>,f f,2,>,f f,3,>,f f,4,>,f f,5,>,f f,6,>,f f,7,>,f f,8,>,f f,9,>,f
+
+08, ,>,g
+
+g,0,>,g g,1,>,g g,2,>,g g,3,>,g g,4,>,g g,5,>,g g,6,>,g g,7,>,g g,8,>,g g,9,>,g
+
+09, ,>,h
+
+h,0,>,h h,1,>,h h,2,>,h h,3,>,h h,4,>,h h,5,>,h h,6,>,h h,7,>,h h,8,>,h h,9,>,h
+
+10, ,>,i
+
+i,0,>,i i,1,>,i i,2,>,i i,3,>,i i,4,>,i i,5,>,i i,6,>,i i,7,>,i i,8,>,i i,9,>,i
+
+11, ,>,j
+
+j,0,>,j j,1,>,j j,2,>,j j,3,>,j j,4,>,j j,5,>,j j,6,>,j j,7,>,j j,8,>,j j,9,>,j

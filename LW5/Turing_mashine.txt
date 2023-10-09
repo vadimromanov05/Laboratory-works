@@ -1,7 +1,21 @@
 00, ,<,run_to_begin
 
-run_to_begin,0,<,run_to_begin run_to_begin,1,<,run_to_begin run_to_begin,2,<,run_to_begin run_to_begin,3,<,run_to_begin run_to_begin,4,<,run_to_begin run_to_begin,5,<,run_to_begin run_to_begin,6,<,run_to_begin run_to_begin,7,<,run_to_begin run_to_begin,8,<,run_to_begin run_to_begin, ,>,copy_first
+run_to_begin,0,<,run_to_begin run_to_begin,1,<,run_to_begin run_to_begin,2,<,run_to_begin run_to_begin,3,<,run_to_begin run_to_begin,4,<,run_to_begin run_to_begin,5,<,run_to_begin run_to_begin,6,<,run_to_begin run_to_begin,7,<,run_to_begin run_to_begin,8,<,run_to_begin run_to_begin, ,>,run_to_digits
 //идём в начало строки
+
+
+74, ,>,run_to_digits
+
+run_to_digits,0,>,run_to_digits run_to_digits,1,=,copy_first run_to_digits,2,=,copy_first
+run_to_digits,3,=,copy_first run_to_digits,4,=,copy_first run_to_digits,5,=,copy_first
+run_to_digits,6,=,copy_first run_to_digits,7,=,copy_first run_to_digits,8,=,copy_first
+run_to_digits, ,>,fin_place_zero
+
+
+75, ,>,fin_place_zero
+
+fin_place_zero, ,0,run_to_fin
+//подарок специально для Вас на случай, если Вы миллион нулей перед числом поставите и ничего другого не будет.
 
 
 01, ,>,copy
@@ -12,6 +26,7 @@ copy,5, ,jump_five  copy,6, ,jump_six  copy,7, ,jump_seven  copy,8, ,jump_eight 
 
 
 02, ,>,jump_zero
+
 jump_zero, ,>,copy_zero
 //перепрыгиваем через пробел
 
@@ -28,11 +43,16 @@ copy_zero,8,>,copy_zero copy_zero, ,>,run_zero
 
 run_zero,0,>,run_zero run_zero,1,>,run_zero run_zero,2,>,run_zero run_zero,3,>,run_zero 
 run_zero,4,>,run_zero run_zero,5,>,run_zero run_zero,6,>,run_zero run_zero,7,>,run_zero
-run_zero,8,>,run_zero run_zero, ,0,come_back_zero
-//веселимся после пробела в новой строке и в конце ставим ноль
+run_zero,8,>,run_zero run_zero, ,0,place_zero
+//веселимся после пробела в новой строке и в конце ставим 00
 
 
-05, ,<,come_back_zero
+05, ,>,place_zero
+
+place_zero,0,>,place_zero place_zero, ,0,come_back_zero
+
+
+06, ,<,come_back_zero
 
 come_back_zero,0,<,come_back_zero come_back_zero,1,<,come_back_zero come_back_zero,2,<,come_back_zero
 come_back_zero,3,<,come_back_zero come_back_zero,4,<,come_back_zero come_back_zero,5,<,come_back_zero
@@ -41,7 +61,7 @@ come_back_zero, ,<,new_come_back_zero
 //возвращаемся к началу нового числа
 
 
-06, ,<,new_come_back_zero
+07, ,<,new_come_back_zero
 
 new_come_back_zero,0,<,new_come_back_zero new_come_back_zero,1,<,new_come_back_zero new_come_back_zero,2,<,new_come_back_zero new_come_back_zero,3,<,new_come_back_zero
 new_come_back_zero,4,<,new_come_back_zero new_come_back_zero,5,<,new_come_back_zero
@@ -50,19 +70,20 @@ new_come_back_zero,8,<,new_come_back_zero new_come_back_zero, ,0,jump_2_zero
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
 
-07, ,>,jump_2_zero
+08, ,>,jump_2_zero
+
 jump_2_zero,0,>,copy
 //переходим к новой букве (цифре)
 
 //с нулём всё!
 
 
-08, ,>,jump_one
+09, ,>,jump_one
 jump_one, ,>,copy_one
 //перепрыгиваем через пробел
 
 
-09, ,>,copy_one
+10, ,>,copy_one
 
 copy_one,0,>,copy_one copy_one,1,>,copy_one copy_one,2,>,copy_one copy_one,3,>,copy_one
 copy_one,4,>,copy_one copy_one,5,>,copy_one copy_one,6,>,copy_one copy_one,7,>,copy_one
@@ -70,15 +91,20 @@ copy_one,8,>,copy_one copy_one, ,>,run_one
 //идём вдоль начальной строки до пробела
 
 
-10, ,>,run_one
+11, ,>,run_one
 
 run_one,0,>,run_one run_one,1,>,run_one run_one,2,>,run_one run_one,3,>,run_one 
 run_one,4,>,run_one run_one,5,>,run_one run_one,6,>,run_one run_one,7,>,run_one
-run_one,8,>,run_one run_one, ,1,come_back_one
-//веселимся после пробела в новой строке и в конце ставим один
+run_one,8,>,run_one run_one, ,0,place_one
+//веселимся после пробела в новой строке и в конце ставим 01
 
 
-11, ,<,come_back_one
+12, ,>,place_one
+
+place_one,0,>,place_one place_one, ,1,come_back_one
+
+
+13, ,<,come_back_one
 
 come_back_one,0,<,come_back_one come_back_one,1,<,come_back_one come_back_one,2,<,come_back_one
 come_back_one,3,<,come_back_one come_back_one,4,<,come_back_one come_back_one,5,<,come_back_one
@@ -87,7 +113,7 @@ come_back_one, ,<,new_come_back_one
 //возвращаемся к началу нового числа
 
 
-12, ,<,new_come_back_one
+14, ,<,new_come_back_one
 
 new_come_back_one,0,<,new_come_back_one new_come_back_one,1,<,new_come_back_one
 new_come_back_one,2,<,new_come_back_one new_come_back_one,3,<,new_come_back_one
@@ -97,14 +123,18 @@ new_come_back_one,8,<,new_come_back_one new_come_back_one, ,1,jump_2_one
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
 
-13, ,>,jump_2_one
+15, ,>,jump_2_one
 jump_2_one,1,>,copy
 //переходим к новой букве (цифре)
 
-
 //с единицей всё!
 
-14, ,>,copy_two
+
+16, ,>,jump_two
+jump_two, ,>,copy_two
+
+
+17, ,>,copy_two
 
 copy_two,0,>,copy_two copy_two,1,>,copy_two copy_two,2,>,copy_two copy_two,3,>,copy_two
 copy_two,4,>,copy_two copy_two,5,>,copy_two copy_two,6,>,copy_two copy_two,7,>,copy_two
@@ -112,15 +142,19 @@ copy_two,8,>,copy_two copy_two, ,>,run_two
 //идём вдоль начальной строки до пробела
 
 
-15, ,>,run_two
+18, ,>,run_two
 
 run_two,0,>,run_two run_two,1,>,run_two run_two,2,>,run_two run_two,3,>,run_two 
 run_two,4,>,run_two run_two,5,>,run_two run_two,6,>,run_two run_two,7,>,run_two
-run_two,8,>,run_two run_two, ,2,come_back_two
-//веселимся после пробела в новой строке и в конце ставим два
+run_two,8,>,run_two run_two, ,0,place_two
+//веселимся после пробела в новой строке и в конце ставим 02
 
 
-16, ,<,come_back_two
+19, ,>,place_two
+place_two,0,>,place_two place_two, ,2,come_back_two
+
+
+20, ,<,come_back_two
 
 come_back_two,0,<,come_back_two come_back_two,1,<,come_back_two come_back_two,2,<,come_back_two
 come_back_two,3,<,come_back_two come_back_two,4,<,come_back_two come_back_two,5,<,come_back_two
@@ -129,7 +163,7 @@ come_back_two, ,<,new_come_back_two
 //возвращаемся к началу нового числа
 
 
-17, ,<,new_come_back_two
+21, ,<,new_come_back_two
 
 new_come_back_two,0,<,new_come_back_two new_come_back_two,1,<,new_come_back_two
 new_come_back_two,2,<,new_come_back_two new_come_back_two,3,<,new_come_back_two
@@ -139,19 +173,19 @@ new_come_back_two,8,<,new_come_back_two new_come_back_two, ,2,jump_2_two
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
 
-18, ,>,jump_2_two
+22, ,>,jump_2_two
 jump_2_two,2,>,copy
 //переходим к новой букве (цифре)
 
 //с двойкой всё!
 
 
-19, ,>,jump_three
+23, ,>,jump_three
 jump_three, ,>,copy_three
 //перепрыгиваем через пробел
 
 
-20, ,>,copy_three
+24, ,>,copy_three
 
 copy_three,0,>,copy_three copy_three,1,>,copy_three copy_three,2,>,copy_three copy_three,3,>,copy_three
 copy_three,4,>,copy_three copy_three,5,>,copy_three copy_three,6,>,copy_three copy_three,7,>,copy_three
@@ -159,19 +193,19 @@ copy_three,8,>,copy_three copy_three, ,>,run_three
 //идём вдоль начальной строки до пробела
 
 
-21, ,>,run_three
+25, ,>,run_three
 
 run_three,0,>,run_three run_three,1,>,run_three run_three,2,>,run_three run_three,3,>,run_three 
 run_three,4,>,run_three run_three,5,>,run_three run_three,6,>,run_three run_three,7,>,run_three
 run_three,8,>,run_three run_three, ,1,place_three
 
-22, ,>,place_three
+26, ,>,place_three
 
 place_three,1,>,place_three place_three, ,0,come_back_three
 //веселимся после пробела в новой строке и в конце ставим 10
 
 
-23, ,<,come_back_three
+27, ,<,come_back_three
 
 come_back_three,0,<,come_back_three come_back_three,1,<,come_back_three 
 come_back_three,2,<,come_back_three come_back_three,3,<,come_back_three 
@@ -180,7 +214,8 @@ come_back_three,6,<,come_back_three come_back_three,7,<,come_back_three
 come_back_three,8,<,come_back_three come_back_three, ,<,new_come_back_three
 //возвращаемся к началу нового числа
 
-24, ,<,new_come_back_three
+
+28, ,<,new_come_back_three
 
 new_come_back_three,0,<,new_come_back_three new_come_back_three,1,<,new_come_back_three new_come_back_three,2,<,new_come_back_three new_come_back_three,3,<,new_come_back_three
 new_come_back_three,4,<,new_come_back_three new_come_back_three,5,<,new_come_back_three
@@ -188,19 +223,19 @@ new_come_back_three,6,<,new_come_back_three new_come_back_three,7,<,new_come_bac
 new_come_back_three,8,<,new_come_back_three new_come_back_three, ,3,jump_2_three
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-25, ,>,jump_2_three
+29, ,>,jump_2_three
 jump_2_three,3,>,copy
 //переходим к новой букве (цифре)
 
 //с тройкой всё!
 
 
-26, ,>,jump_four
+30, ,>,jump_four
 jump_four, ,>,copy_four
 //перепрыгиваем через пробел
 
 
-27, ,>,copy_four
+31, ,>,copy_four
 
 copy_four,0,>,copy_four copy_four,1,>,copy_four copy_four,2,>,copy_four copy_four,3,>,copy_four
 copy_four,4,>,copy_four copy_four,5,>,copy_four copy_four,6,>,copy_four copy_four,7,>,copy_four
@@ -208,19 +243,20 @@ copy_four,8,>,copy_four copy_four, ,>,run_four
 //идём вдоль начальной строки до пробела
 
 
-28, ,>,run_four
+32, ,>,run_four
 
 run_four,0,>,run_four run_four,1,>,run_four run_four,2,>,run_four run_four,3,>,run_four 
 run_four,4,>,run_four run_four,5,>,run_four run_four,6,>,run_four run_four,7,>,run_four
 run_four,8,>,run_four run_four, ,1,place_four
 
-29, ,>,place_four
+
+33, ,>,place_four
 
 place_four,1,>,place_four place_four, ,1,come_back_four
 //веселимся после пробела в новой строке и в конце ставим 11
 
 
-30, ,<,come_back_four
+34, ,<,come_back_four
 
 come_back_four,0,<,come_back_four come_back_four,1,<,come_back_four 
 come_back_four,2,<,come_back_four come_back_four,3,<,come_back_four
@@ -229,7 +265,8 @@ come_back_four,6,<,come_back_four come_back_four,7,<,come_back_four
 come_back_four,8,<,come_back_four come_back_four, ,<,new_come_back_four
 //возвращаемся к началу нового числа
 
-31, ,<,new_come_back_four
+
+35, ,<,new_come_back_four
 
 new_come_back_four,0,<,new_come_back_four new_come_back_four,1,<,new_come_back_four new_come_back_four,2,<,new_come_back_four new_come_back_four,3,<,new_come_back_four
 new_come_back_four,4,<,new_come_back_four new_come_back_four,5,<,new_come_back_four
@@ -237,19 +274,20 @@ new_come_back_four,6,<,new_come_back_four new_come_back_four,7,<,new_come_back_f
 new_come_back_four,8,<,new_come_back_four new_come_back_four, ,4,jump_2_four
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-32, ,>,jump_2_four
+
+36, ,>,jump_2_four
 jump_2_four,4,>,copy
 //переходим к новой букве (цифре)
 
 //с четвёркой всё!
 
 
-33, ,>,jump_five
+37, ,>,jump_five
 jump_five, ,>,copy_five
 //перепрыгиваем через пробел
 
 
-34, ,>,copy_five
+38, ,>,copy_five
 
 copy_five,0,>,copy_five copy_five,1,>,copy_five copy_five,2,>,copy_five copy_five,3,>,copy_five
 copy_five,4,>,copy_five copy_five,5,>,copy_five copy_five,6,>,copy_five copy_five,7,>,copy_five
@@ -257,19 +295,20 @@ copy_five,8,>,copy_five copy_five, ,>,run_five
 //идём вдоль начальной строки до пробела
 
 
-35, ,>,run_five
+39, ,>,run_five
 
 run_five,0,>,run_five run_five,1,>,run_five run_five,2,>,run_five run_five,3,>,run_five 
 run_five,4,>,run_five run_five,5,>,run_five run_five,6,>,run_five run_five,7,>,run_five
 run_five,8,>,run_five run_five, ,1,place_five
 
-36, ,>,place_five
+
+40, ,>,place_five
 
 place_five,1,>,place_five place_five, ,2,come_back_five
 //веселимся после пробела в новой строке и в конце ставим 12
 
 
-37, ,<,come_back_five
+41, ,<,come_back_five
 
 come_back_five,0,<,come_back_five come_back_five,1,<,come_back_five 
 come_back_five,2,<,come_back_five come_back_five,3,<,come_back_five
@@ -278,7 +317,8 @@ come_back_five,6,<,come_back_five come_back_five,7,<,come_back_five
 come_back_five,8,<,come_back_five come_back_five, ,<,new_come_back_five
 //возвращаемся к началу нового числа
 
-38, ,<,new_come_back_five
+
+42, ,<,new_come_back_five
 
 new_come_back_five,0,<,new_come_back_five new_come_back_five,1,<,new_come_back_five new_come_back_five,2,<,new_come_back_five new_come_back_five,3,<,new_come_back_five
 new_come_back_five,4,<,new_come_back_five new_come_back_five,5,<,new_come_back_five
@@ -286,19 +326,20 @@ new_come_back_five,6,<,new_come_back_five new_come_back_five,7,<,new_come_back_f
 new_come_back_five,8,<,new_come_back_five new_come_back_five, ,5,jump_2_five
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-39, ,>,jump_2_five
+
+43, ,>,jump_2_five
 jump_2_five,5,>,copy
 //переходим к новой букве (цифре)
 
 //с пятёркой всё!
 
 
-40, ,>,jump_six
+44, ,>,jump_six
 jump_six, ,>,copy_six
 //перепрыгиваем через пробел
 
 
-41, ,>,copy_six
+45, ,>,copy_six
 
 copy_six,0,>,copy_six copy_six,1,>,copy_six copy_six,2,>,copy_six copy_six,3,>,copy_six
 copy_six,4,>,copy_six copy_six,5,>,copy_six copy_six,6,>,copy_six copy_six,7,>,copy_six
@@ -306,19 +347,20 @@ copy_six,8,>,copy_six copy_six, ,>,run_six
 //идём вдоль начальной строки до пробела
 
 
-42, ,>,run_six
+46, ,>,run_six
 
 run_six,0,>,run_six run_six,1,>,run_six run_six,2,>,run_six run_six,3,>,run_six 
 run_six,4,>,run_six run_six,5,>,run_six run_six,6,>,run_six run_six,7,>,run_six
 run_six,8,>,run_six run_six, ,2,place_six
 
-43, ,>,place_six
+
+47, ,>,place_six
 
 place_six,2,>,place_six place_six, ,0,come_back_six
 //веселимся после пробела в новой строке и в конце ставим 20
 
 
-44, ,<,come_back_six
+48, ,<,come_back_six
 
 come_back_six,0,<,come_back_six come_back_six,1,<,come_back_six 
 come_back_six,2,<,come_back_six come_back_six,3,<,come_back_six
@@ -327,7 +369,8 @@ come_back_six,6,<,come_back_six come_back_six,7,<,come_back_six
 come_back_six,8,<,come_back_six come_back_six, ,<,new_come_back_six
 //возвращаемся к началу нового числа
 
-45, ,<,new_come_back_six
+
+49, ,<,new_come_back_six
 
 new_come_back_six,0,<,new_come_back_six new_come_back_six,1,<,new_come_back_six 
 new_come_back_six,2,<,new_come_back_six new_come_back_six,3,<,new_come_back_six 
@@ -336,19 +379,20 @@ new_come_back_six,6,<,new_come_back_six new_come_back_six,7,<,new_come_back_six
 new_come_back_six,8,<,new_come_back_six new_come_back_six, ,6,jump_2_six
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-46, ,>,jump_2_six
+
+50, ,>,jump_2_six
 jump_2_six,6,>,copy
 //переходим к новой букве (цифре)
 
 //с шестёркой всё!
 
 
-47, ,>,jump_seven
+51, ,>,jump_seven
 jump_seven, ,>,copy_seven
 //перепрыгиваем через пробел
 
 
-48, ,>,copy_seven
+52, ,>,copy_seven
 
 copy_seven,0,>,copy_seven copy_seven,1,>,copy_seven copy_seven,2,>,copy_seven copy_seven,3,>,copy_seven
 copy_seven,4,>,copy_seven copy_seven,5,>,copy_seven copy_seven,6,>,copy_seven copy_seven,7,>,copy_seven
@@ -356,19 +400,20 @@ copy_seven,8,>,copy_seven copy_seven, ,>,run_seven
 //идём вдоль начальной строки до пробела
 
 
-49, ,>,run_seven
+53, ,>,run_seven
 
 run_seven,0,>,run_seven run_seven,1,>,run_seven run_seven,2,>,run_seven run_seven,3,>,run_seven 
 run_seven,4,>,run_seven run_seven,5,>,run_seven run_seven,6,>,run_seven run_seven,7,>,run_seven
 run_seven,8,>,run_seven run_seven, ,2,place_seven
 
-50, ,>,place_seven
+
+54, ,>,place_seven
 
 place_seven,2,>,place_seven place_seven, ,1,come_back_seven
 //веселимся после пробела в новой строке и в конце ставим 21
 
 
-51, ,<,come_back_seven
+55, ,<,come_back_seven
 
 come_back_seven,0,<,come_back_seven come_back_seven,1,<,come_back_seven 
 come_back_seven,2,<,come_back_seven come_back_seven,3,<,come_back_seven
@@ -377,7 +422,8 @@ come_back_seven,6,<,come_back_seven come_back_seven,7,<,come_back_seven
 come_back_seven,8,<,come_back_seven come_back_seven, ,<,new_come_back_seven
 //возвращаемся к началу нового числа
 
-52, ,<,new_come_back_seven
+
+56, ,<,new_come_back_seven
 
 new_come_back_seven,0,<,new_come_back_seven new_come_back_seven,1,<,new_come_back_seven new_come_back_seven,2,<,new_come_back_seven new_come_back_seven,3,<,new_come_back_seven 
 new_come_back_seven,4,<,new_come_back_seven new_come_back_seven,5,<,new_come_back_seven 
@@ -385,19 +431,20 @@ new_come_back_seven,6,<,new_come_back_seven new_come_back_seven,7,<,new_come_bac
 new_come_back_seven,8,<,new_come_back_seven new_come_back_seven, ,7,jump_2_seven
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-53, ,>,jump_2_seven
+
+57, ,>,jump_2_seven
 jump_2_seven,7,>,copy
 //переходим к новой букве (цифре)
 
 //с семёркой всё!
 
 
-54, ,>,jump_eight
+58, ,>,jump_eight
 jump_eight, ,>,copy_eight
 //перепрыгиваем через пробел
 
 
-55, ,>,copy_eight
+59, ,>,copy_eight
 
 copy_eight,0,>,copy_eight copy_eight,1,>,copy_eight copy_eight,2,>,copy_eight copy_eight,3,>,copy_eight
 copy_eight,4,>,copy_eight copy_eight,5,>,copy_eight copy_eight,6,>,copy_eight copy_eight,7,>,copy_eight
@@ -405,19 +452,20 @@ copy_eight,8,>,copy_eight copy_eight, ,>,run_eight
 //идём вдоль начальной строки до пробела
 
 
-56, ,>,run_eight
+60, ,>,run_eight
 
 run_eight,0,>,run_eight run_eight,1,>,run_eight run_eight,2,>,run_eight run_eight,3,>,run_eight 
 run_eight,4,>,run_eight run_eight,5,>,run_eight run_eight,6,>,run_eight run_eight,7,>,run_eight
 run_eight,8,>,run_eight run_eight, ,2,place_eight
 
-57, ,>,place_eight
+
+61, ,>,place_eight
 
 place_eight,2,>,place_eight place_eight, ,2,come_back_eight
 //веселимся после пробела в новой строке и в конце ставим 22
 
 
-58, ,<,come_back_eight
+62, ,<,come_back_eight
 
 come_back_eight,0,<,come_back_eight come_back_eight,1,<,come_back_eight 
 come_back_eight,2,<,come_back_eight come_back_eight,3,<,come_back_eight
@@ -426,7 +474,8 @@ come_back_eight,6,<,come_back_eight come_back_eight,7,<,come_back_eight
 come_back_eight,8,<,come_back_eight come_back_eight, ,<,new_come_back_eight
 //возвращаемся к началу нового числа
 
-59, ,<,new_come_back_eight
+
+63, ,<,new_come_back_eight
 
 new_come_back_eight,0,<,new_come_back_eight new_come_back_eight,1,<,new_come_back_eight new_come_back_eight,2,<,new_come_back_eight new_come_back_eight,3,<,new_come_back_eight 
 new_come_back_eight,4,<,new_come_back_eight new_come_back_eight,5,<,new_come_back_eight 
@@ -434,249 +483,76 @@ new_come_back_eight,6,<,new_come_back_eight new_come_back_eight,7,<,new_come_bac
 new_come_back_eight,8,<,new_come_back_eight new_come_back_eight, ,8,jump_2_eight
 //возвращаемся к букве, которую мы стёрли (цифра - это тоже буква), и возвращаем её на место (точь в точь по Зайцеву)
 
-60, ,>,jump_2_eight
+
+64, ,>,jump_2_eight
 jump_2_eight,8,>,copy
 //переходим к новой букве (цифре)
 
 //с восьмёркой всё!
 
 
-61, ,>,run_to_fin
+65, ,>,copy_first
+
+copy_first,0,>,copy copy_first,1, ,jump_first_one copy_first,2, ,jump_first_two
+copy_first,3, ,jump_three copy_first,4, ,jump_four copy_first,5, ,jump_five
+copy_first,6, ,jump_six copy_first,7, ,jump_seven copy_first,8, ,jump_eight
+copy_first, ,>,run_to_fin
+
+
+66, ,>,jump_first_one
+
+jump_first_one, ,>,copy_first_one
+
+
+67, ,>,copy_first_one
+
+copy_first_one,0,>,copy_first_one copy_first_one,1,>,copy_first_one copy_first_one,2,>,copy_first_one
+copy_first_one,3,>,copy_first_one copy_first_one,4,>,copy_first_one copy_first_one,5,>,copy_first_one
+copy_first_one,6,>,copy_first_one copy_first_one,7,>,copy_first_one copy_first_one,8,>,copy_first_one
+copy_first_one, ,>,run_first_one
+
+
+68, ,>,run_first_one
+
+run_first_one,0,>,run_first_one run_first_one,1,>,run_first_one run_first_one,2,>,run_first_one
+run_first_one,3,>,run_first_one run_first_one,4,>,run_first_one run_first_one,5,>,run_first_one
+run_first_one,6,>,run_first_one run_first_one,7,>,run_first_one run_first_one,8,>,run_first_one
+run_first_one, ,1,come_back_one
+
+// первая постановка единицы
+
+
+69, ,>,jump_first_two
+
+jump_first_two, ,>,copy_first_two
+
+
+70, ,>,copy_first_two
+
+copy_first_two,0,>,copy_first_two copy_first_two,1,>,copy_first_two copy_first_two,2,>,copy_first_two
+copy_first_two,3,>,copy_first_two copy_first_two,4,>,copy_first_two copy_first_two,5,>,copy_first_two
+copy_first_two,6,>,copy_first_two copy_first_two,7,>,copy_first_two copy_first_two,8,>,copy_first_two
+copy_first_two, ,>,run_first_two
+
+
+71, ,>,run_first_two
+
+run_first_two,0,>,run_first_two run_first_two,1,>,run_first_two run_first_two,2,>,run_first_two
+run_first_two,3,>,run_first_two run_first_two,4,>,run_first_two run_first_two,5,>,run_first_two
+run_first_two,6,>,run_first_two run_first_two,7,>,run_first_two run_first_two,8,>,run_first_two
+run_first_two, ,1,come_back_two
+
+// первая постановка двойки
+
+
+72, ,>,run_to_fin
 
 run_to_fin,0,>,run_to_fin run_to_fin,1,>,run_to_fin run_to_fin,2,>,run_to_fin run_to_fin,3,>,run_to_fin
 run_to_fin,4,>,run_to_fin run_to_fin,5,>,run_to_fin run_to_fin,6,>,run_to_fin run_to_fin,7,>,run_to_fin
 run_to_fin,8,>,run_to_fin run_to_fin, ,=,fin
 //идём к концу второй строки, чтобы завершить работу
 
-62, ,#,fin
+
+73, ,#,fin
 fin, ,#,fin
 //завершаем работу
-
-63, ,>,jump_two
-jump_two, ,>,copy_two
-//забыл это написать для двойки, уже лень нумерацию смещать
-
-64, ,>,copy_first
-
-copy_first,0, ,jump_zero copy_first,1, ,jump_first_one copy_first,2, ,jump_first_two copy_first,3, ,jump_first_three
-copy_first,4, ,jump_first_four copy_first,5, ,jump_first_five copy_first,6, ,jump_first_six copy_first,7, ,jump_first_seven
-copy_first,8, ,jump_first_one copy_first, ,>,run_to_fin
-//Производим первое копирование числа(там же ведь ещё один ноль нужен)
-
-65, ,>,jump_first_one
-jump_first_one, ,>,copy_first_one
-//перепрыгиваем через пробел
-
-
-66, ,>,copy_first_one
-
-copy_first_one,0,>,copy_first_one copy_first_one,1,>,copy_first_one copy_first_one,2,>,copy_first_one
-copy_first_one,3,>,copy_first_one copy_first_one,4,>,copy_first_one copy_first_one,5,>,copy_first_one
-copy_first_one,6,>,copy_first_one copy_first_one,7,>,copy_first_one
-copy_first_one,8,>,copy_first_one copy_first_one, ,>,run_first_one
-//идём вдоль начальной строки до пробела
-
-
-67, ,>,run_first_one
-
-run_first_one,0,>,run_first_one run_first_one,1,>,run_first_one run_first_one,2,>,run_first_one
-run_first_one,3,>,run_first_one run_first_one,4,>,run_first_one run_first_one,5,>,run_first_one
-run_first_one,6,>,run_first_one run_first_one,7,>,run_first_one
-run_first_one,8,>,run_first_one run_first_one, ,1,place_first_one
-
-68, ,>,place_first_one
-place_first_one, ,0,come_back_one
-//веселимся после пробела в новой строке и в конце ставим 10
-// с единицей снова всё!
-
-69, ,>,jump_first_two
-jump_first_two, ,>,copy_first_two
-//перепрыгиваем через пробел
-
-70, ,>,copy_first_two
-
-copy_first_two,0,>,copy_first_two copy_first_two,1,>,copy_first_two copy_first_two,2,>,copy_first_two
-copy_first_two,3,>,copy_first_two copy_first_two,4,>,copy_first_two copy_first_two,5,>,copy_first_two
-copy_first_two,6,>,copy_first_two copy_first_two,7,>,copy_first_two
-copy_first_two,8,>,copy_first_two copy_first_two, ,>,run_first_two
-//идём вдоль начальной строки до пробела
-
-71, ,>,run_first_two
-
-run_first_two,0,>,run_first_two run_first_two,1,>,run_first_two run_first_two,2,>,run_first_two
-run_first_two,3,>,run_first_two run_first_two,4,>,run_first_two run_first_two,5,>,run_first_two
-run_first_two,6,>,run_first_two run_first_two,7,>,run_first_two
-run_first_two,8,>,run_first_two run_first_two, ,2,place_first_two
-
-72, ,=,place_first_two
-place_first_two, ,0,come_back_two
-//веселимся после пробела в новой строке и в конце ставим 20
-//с двойкой снова всё!
-
-
-73, ,>,jump_first_three
-jump_first_three, ,>,copy_first_three
-//перепрыгиваем через пробел
-
-74, ,>,copy_first_three
-
-copy_first_three,0,>,copy_first_three copy_first_three,1,>,copy_first_three copy_first_three,2,>,copy_first_three
-copy_first_three,3,>,copy_first_three copy_first_three,4,>,copy_first_three copy_first_three,5,>,copy_first_three
-copy_first_three,6,>,copy_first_three copy_first_three,7,>,copy_first_three
-copy_first_three,8,>,copy_first_three copy_first_three, ,>,run_first_three
-//идём вдоль начальной строки до пробела
-
-75, ,>,run_first_three
-
-run_first_three,0,>,run_first_three run_first_three,1,>,run_first_three run_first_three,2,>,run_first_three
-run_first_three,3,>,run_first_three run_first_three,4,>,run_first_three run_first_three,5,>,run_first_three
-run_first_three,6,>,run_first_three run_first_three,7,>,run_first_three
-run_first_three,8,>,run_first_three run_first_three, ,1,place_first_three
-
-76, ,=,place_first_three
-place_first_three, ,0,place_first_three place_first_three,0,>,second_place_three
-
-77, ,=,second_place_three
-second_place_three, ,0,come_back_three
-//веселимся после пробела в новой строке и в конце ставим 100
-//с тройкой снова всё!
-
-
-78, ,>,jump_first_four
-jump_first_four, ,>,copy_first_four
-//перепрыгиваем через пробел
-
-79, ,>,copy_first_four
-
-copy_first_four,0,>,copy_first_four copy_first_four,1,>,copy_first_four copy_first_four,2,>,copy_first_four
-copy_first_four,3,>,copy_first_four copy_first_four,4,>,copy_first_four copy_first_four,5,>,copy_first_four
-copy_first_four,6,>,copy_first_four copy_first_four,7,>,copy_first_four
-copy_first_four,8,>,copy_first_four copy_first_four, ,>,run_first_four
-//идём вдоль начальной строки до пробела
-
-80, ,>,run_first_four
-
-run_first_four,0,>,run_first_four run_first_four,1,>,run_first_four run_first_four,2,>,run_first_four
-run_first_four,3,>,run_first_four run_first_four,4,>,run_first_four run_first_four,5,>,run_first_four
-run_first_four,6,>,run_first_four run_first_four,7,>,run_first_four
-run_first_four,8,>,run_first_four run_first_four, ,1,place_first_four
-
-81, ,=,place_first_four
-place_first_four, ,1,place_first_four place_first_four,1,>,second_place_four
-
-82, ,=,second_place_four
-second_place_four, ,0,come_back_four
-//веселимся после пробела в новой строке и в конце ставим 110
-//с четвёркой снова всё!
-
-
-83, ,>,jump_first_five
-jump_first_five, ,>,copy_first_five
-//перепрыгиваем через пробел
-
-84, ,>,copy_first_five
-
-copy_first_five,0,>,copy_first_five copy_first_five,1,>,copy_first_five copy_first_five,2,>,copy_first_five
-copy_first_five,3,>,copy_first_five copy_first_five,4,>,copy_first_five copy_first_five,5,>,copy_first_five
-copy_first_five,6,>,copy_first_five copy_first_five,7,>,copy_first_five
-copy_first_five,8,>,copy_first_five copy_first_five, ,>,run_first_five
-//идём вдоль начальной строки до пробела
-
-85, ,>,run_first_five
-
-run_first_five,0,>,run_first_five run_first_five,1,>,run_first_five run_first_five,2,>,run_first_five
-run_first_five,3,>,run_first_five run_first_five,4,>,run_first_five run_first_five,5,>,run_first_five
-run_first_five,6,>,run_first_five run_first_five,7,>,run_first_five
-run_first_five,8,>,run_first_five run_first_five, ,1,place_first_five
-
-86, ,=,place_first_five
-place_first_five, ,2,place_first_five place_first_five,2,>,second_place_five
-
-87, ,=,second_place_five
-second_place_five, ,0,come_back_five
-//веселимся после пробела в новой строке и в конце ставим 120
-//с пятёркой снова всё!
-
-
-88, ,>,jump_first_six
-jump_first_six, ,>,copy_first_six
-//перепрыгиваем через пробел
-
-89, ,>,copy_first_six
-
-copy_first_six,0,>,copy_first_six copy_first_six,1,>,copy_first_six copy_first_six,2,>,copy_first_six
-copy_first_six,3,>,copy_first_six copy_first_six,4,>,copy_first_six copy_first_six,5,>,copy_first_six
-copy_first_six,6,>,copy_first_six copy_first_six,7,>,copy_first_six
-copy_first_six,8,>,copy_first_six copy_first_six, ,>,run_first_six
-//идём вдоль начальной строки до пробела
-
-90, ,>,run_first_six
-
-run_first_six,0,>,run_first_six run_first_six,1,>,run_first_six run_first_six,2,>,run_first_six
-run_first_six,3,>,run_first_six run_first_six,4,>,run_first_six run_first_six,5,>,run_first_six
-run_first_six,6,>,run_first_six run_first_six,7,>,run_first_six
-run_first_six,8,>,run_first_six run_first_six, ,2,place_first_six
-
-91, ,=,place_first_six
-place_first_six, ,0,place_first_six place_first_six,0,>,second_place_six
-
-92, ,=,second_place_six
-second_place_six, ,0,come_back_six
-//веселимся после пробела в новой строке и в конце ставим 200
-//с шестёркой снова всё!
-
-
-93, ,>,jump_first_seven
-jump_first_seven, ,>,copy_first_seven
-//перепрыгиваем через пробел
-
-94, ,>,copy_first_seven
-
-copy_first_seven,0,>,copy_first_seven copy_first_seven,1,>,copy_first_seven copy_first_seven,2,>,copy_first_seven
-copy_first_seven,3,>,copy_first_seven copy_first_seven,4,>,copy_first_seven copy_first_seven,5,>,copy_first_seven
-copy_first_seven,6,>,copy_first_seven copy_first_seven,7,>,copy_first_seven
-copy_first_seven,8,>,copy_first_seven copy_first_seven, ,>,run_first_seven
-//идём вдоль начальной строки до пробела
-
-95, ,>,run_first_seven
-
-run_first_seven,0,>,run_first_seven run_first_seven,1,>,run_first_seven run_first_seven,2,>,run_first_seven
-run_first_seven,3,>,run_first_seven run_first_seven,4,>,run_first_seven run_first_seven,5,>,run_first_seven
-run_first_seven,6,>,run_first_seven run_first_seven,7,>,run_first_seven
-run_first_seven,8,>,run_first_seven run_first_seven, ,2,place_first_seven
-
-96, ,=,place_first_seven
-place_first_seven, ,1,place_first_seven place_first_seven,1,>,second_place_seven
-
-97, ,=,second_place_seven
-second_place_seven, ,0,come_back_seven
-//веселимся после пробела в новой строке и в конце ставим 210
-//с семёркой снова всё!
-
-
-98, ,>,jump_first_eight
-jump_first_eight, ,>,copy_first_eight
-//перепрыгиваем через пробел
-
-99, ,>,copy_first_eight
-
-copy_first_eight,0,>,copy_first_eight copy_first_eight,1,>,copy_first_eight copy_first_eight,2,>,copy_first_eight
-copy_first_eight,3,>,copy_first_eight copy_first_eight,4,>,copy_first_eight copy_first_eight,5,>,copy_first_eight
-copy_first_eight,6,>,copy_first_eight copy_first_eight,7,>,copy_first_eight
-copy_first_eight,8,>,copy_first_eight copy_first_eight, ,>,run_first_eight
-//идём вдоль начальной строки до пробела
-
-100, ,>,run_first_eight
-
-run_first_eight,0,>,run_first_eight run_first_eight,1,>,run_first_eight run_first_eight,2,>,run_first_eight
-run_first_eight,3,>,run_first_eight run_first_eight,4,>,run_first_eight run_first_eight,5,>,run_first_eight
-run_first_eight,6,>,run_first_eight run_first_eight,7,>,run_first_eight
-run_first_eight,8,>,run_first_eight run_first_eight, ,2,place_first_eight
-
-101, ,=,place_first_eight
-place_first_eight, ,2,place_first_eight place_first_eight,2,>,second_place_eight
-
-102, ,=,second_place_eight
-second_place_eight, ,0,come_back_eight
-//веселимся после пробела в новой строке и в конце ставим 220
-//с восьмёркой снова всё!

@@ -1,0 +1,548 @@
+$ cat compile.exe
+MZ▒▒▒▒@▒▒▒      ▒!▒L▒!This program cannot be run in DOS mode.
+$PEd▒.▒Pe▒▒▒&
+             '▒▒
+▒▒@@.pdata8▒▒@@.xdata▒▒@@.bss▒(▒▒▒.texth▒▒``.data▒▒▒@▒.rdata▒
+                              ▒▒▒.idata▒@▒.CRT`▒@▒.tls▒@▒.reloc▒ ▒@B/4P0▒@B/19▒@▒@B/31▒P▒@B/45▒`▒@B/57Hp▒@B/70▒▒▒@B/81▒▒▒@B▒ff.▒@H▒▒(H▒▒▒1▒▒H▒▒▒▒H▒▒▒▒H▒▒▒f▒8MZu▒▒▒▒▒tC▒▒q▒▒▒zH▒▒▒▒▒▒zH▒▒▒▒▒▒TH▒M▒▒8tP1▒H▒▒(Ð▒▒.▒▒@▒Pf▒▒
+                                                        tEf▒▒
+                                                             u▒▒▒▒▒{▒▒▒▒▒▒1Ʌ▒▒▒▒1▒H▒T$ H▒▒▒H▒H▒=▒D▒E▒▒▒▒eH▒%0H▒▒H▒1▒L▒%M▒▒▒H9▒▒▒▒A▒▒H▒▒▒H▒3H▒▒u▒H▒5▒1▒▒▒▒▒▒▒▒▒l▒▒▒▒▒▒▒▒▒▒▒
+          H▒▒▒H▒H▒▒t
+▒▒▒▒H▒▒▒y▒WH▒▒▒H▒▒▒▒▒x1▒H▒H▒▒u▒X▒▒▒tE▒▒t'▒H▒▒▒▒▒ ~▒A▒▒A▒▒▒▒"AD▒▒▒fD▒▒t@▒PH▒▒▒▒t▒▒ ~▒H▒▒D▒E▒▒t▒
+▒D$\▒▒▒▒▒$▒D▒cMc▒I▒▒L▒▒▒I▒H▒=▒H▒Ņ▒▒eI▒1ېH▒
+                                          ▒O▒H▒pH▒▒▒I▒▒H▒DH▒H▒▒H▒▒
+                                                                  ▒L9▒u▒H▒H▒H▒-▒▒▒▒▒w▒▒▒▒▒H▒▒▒▒▒▒▒▒▒蓁▒f▒H▒▒(H▒բ▒▒▒▒▒▒▒H▒▒(▒H▒▒(H▒▒▒▒▒▒▒▒▒▒H▒▒(▒H▒▒(▒'▒H▒▒▒H▒▒(Ð▒▒▒▒▒▒▒▒▒▒▒▒▒@Ð▒▒▒▒▒▒▒▒▒▒▒▒▒▒USH▒▒8H▒l$0H▒M H▒U(L▒E0L▒M8H▒E(H▒E▒H▒]▒H▒m▒▒▒H▒▒H▒E I▒▒H▒▒▒▒▒E▒▒E▒H▒▒8[]▒UH▒▒H▒▒ ▒▒H▒h▒H▒▒▒▒▒▒▒H▒▒ ]Ð▒▒▒▒H▒▒(H▒U▒H▒H▒▒t"D▒▒H▒?▒H▒H▒~▒▒▒H▒▒([^▒▒▒▒1▒fDD▒@▒▒J▒<▒L▒▒u▒▒fDVSH▒▒(▒▒▒▒▒tH▒▒([^▒f▒H▒y▒▒▒▒H▒▒▒▒▒▒t5▒▒t▒ȃ▒H▒▒▒▒▒H▒▒([^▒#▒▒▒1▒fDD▒@▒▒J▒<▒L▒▒u▒뱐▒▒▒▒▒1▒Ð▒▒▒▒▒▒▒▒▒▒▒▒H▒▒(▒▒t▒▒t▒H▒▒(▒f▒▒+
+▒H▒▒(ÐVSH▒▒(H▒▒▒▒8t▒▒▒t▒▒tN▒H▒▒([^▒f▒H▒▒▒H▒5▒▒H9▒t▒DH▒H▒▒t▒▒H▒H9▒u▒H▒▒([^▒f▒▒  ▒H▒▒([^▒ff.▒@1▒Ð▒▒▒▒▒▒▒▒▒▒▒▒VSH▒▒x)t$@)|$PD)D$`▒9▒▒▒H▒▒▒Hc▒H▒▒▒▒H▒▒▒▒DA ▒y▒qH▒▒▒St▒DD$0I▒▒H▒:▒▒|$(H▒▒I▒▒▒t$ ▒▒}▒(t$@(|$P1▒D(D$`H▒▒x[^ÐH▒ ▒▒▒H▒Y▒▒▒H▒)▒▒s▒▒▒@H▒▒▒▒c▒▒▒@H▒Q▒▒S▒▒▒H▒▒▒▒G▒▒▒▒▒▒▒▒▒▒▒▒▒Ð▒▒▒▒▒▒▒▒▒▒▒▒VSH▒▒8H▒▒H▒D$X▒H▒T$XL▒D$`L▒L$hH▒D$▒▒I▒▒▒:}H▒t$(▒▒KsH▒▒H▒▒I▒▒▒e}▒▒|▒▒WVSH▒▒PHc5V▒H▒˅▒▒H▒H▒E1▒H▒▒f▒L▒L9▒rH▒▒I▒L9▒▒▒A▒▒H▒▒(A9▒u▒H▒▒▒
+H▒▒H▒▒▒▒H▒▒▒H▒▒H▒▒H▒H▒x ▒▒▒
+                           ▒W
+                             A▒0H▒
+                                  H▒▒▒H▒T$ H▒L▒3▒H▒▒▒}▒D$D▒P▒▒▒▒▒P▒▒▒u▒▒▒H▒▒P[^_4▒▒/▒▒▒▒ff.▒UAWAVAUATWVSH▒▒HH▒l$@D▒%▒▒E▒▒tH▒[^_A\A]A^A_]▒fD▒▒▒▒▒        H▒H▒▒H▒▒H▒▒▒▒
+     L▒-▒H▒▒▒▒~▒H)▒H▒D$0H▒s▒L▒▒H)▒H▒▒~▒▒H▒▒
+                                           ▒▒▒▒▒▒▒C▒▒▒~▒▒▒▒▒H▒▒
+                                                               L9▒▒V▒▒▒L▒5▒▒A▒▒▒▒▒▒efD▒▒▒▒▒▒p▒7▒▒▒f▒▒▒▒H▒▒▒▒H)▒L΅▒uH▒▒▒▒▒|eH▒▒▒▒\H▒▒▒a▒▒▒f▒7H▒▒
+                                                               L9▒▒▒▒▒▒{L▒▒▒LL▒▒t▒▒▒▒▒▒▒▒▒▒▒C▒▒▒H)▒L΁▒▒▒bH▒▒x▒H▒t$ ▒▒I▒▒H▒
+               ▒▒▒▒▒H▒▒
+                       ▒▒▒▒▒▒▒7▒▒▒@▒▒▒FH▒▒▒▒▒H)▒L΅▒uH▒▒▒▒H▒▒▒|▒H▒▒H▒▒
+                                                                     ▒▒▒▒@▒7L9▒▒▒▒H▒D▒E▒▒u▒A▒▒H▒▒(A9▒|▒▒▒▒▒▒7▒▒▒▒▒ylI▒▒▒▒▒LA9▒▒▒▒H)▒L΅▒uL9▒▒▒▒▒▒H▒▒▒▒▒▒▒▒H9▒▒▒▒▒▒H▒▒▒▒▒▒▒7▒T▒▒▒f▒H▒▒▒▒▒▒H▒7▒B▒▒▒H)▒L΅▒▒▒▒▒▒$▒▒▒DH)▒L΅▒t▒▒@H)▒L΅▒▒▒▒▒▒▒▒▒▒▒DL9▒▒▒9▒▒dw▒▒▒▒SH▒▒ H▒▒H▒ˉ▒▒▒▒▒▒ ▒▒CCG ▒▒=▒▒wG=▒▒vas▒▒?▒▒▒АH▒▒▒▒H▒L▒Hc▒H▒▒▒1▒wH▒▒▒>H▒▒▒H▒▒▒H▒▒tuH▒▒H▒▒ [H▒▒f.▒=▒▒▒vc▒t,=▒u▒1ҹ▒AwH▒▒▒▒H▒▒t▒▒▒▒▒▒▒▒▒▒▒▒B▒7▒▒▒▒▒@1▒H▒▒ [▒▒=▒▒d▒▒▒▒▒1▒▒vH▒▒▒@▒▒▒▒▒▒v▒f▒1ҹ
+                               ▒vH▒▒t*H▒▒▒▒▒▒▒
+                                              ▒▒▒i▒▒▒f▒▒▒▒T▒▒▒▒▒
+                                                                ▒mv▒@▒▒▒▒▒▒Yv▒,▒▒▒▒▒Ev▒▒▒▒▒▒▒▒▒▒▒WVSH▒▒ ▒▒▒▒▒H▒օ▒u
+1▒H▒▒ [^_ú▒▒uH▒▒H▒▒t3H▒H▒5▒▒▒8H▒▒▒?▒H▒\▒H▒▒H▒R▒H▒C▒L▒묃▒▒멐VSH▒▒(▒<▒▒˅▒u1▒H▒▒([^▒DH▒59▒H▒H▒▒t'1▒▒
+                 H▒▒H▒▒t▒▒▒9▒H▒Au▒H▒▒tH▒B▒5uH▒▒▒▒▒1▒H▒▒([^▒H▒▒▒▒▒ff.▒@ATUWVSH▒▒ ▒▒▒w3▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒H▒▒ [^_]A\▒▒▒u▒e▒▒▒t▒L▒%r▒L▒▒▒%▒H▒B▒H▒▒tAH▒-Z▒H▒=▒▒▒
+                                                                        ▒▒H▒▒▒▒H▒▒▒>▒▒▒6H▒H▒▒▒▒H▒[H▒▒u▒L▒▒▒▒▒▒s▒▒▒fD▒▒▒▒uv▒▒▒▒▒T▒▒▒H▒ȾH▒▒tH▒▒H▒[▒
+▒▒▒▒▒K▒▒▒▒H▒▒ [^_]A\▒L▒%▒▒L▒▒▒4▒H▒Q▒H▒▒t8H▒-i▒H▒="▒fD▒           tH▒▒u▒H▒
+                                                      ▒▒H▒▒▒ׅ▒uCH▒▒t>H▒H▒▒▒▒H▒[H▒▒▒▒▒▒i▒▒▒fDH▒[H▒▒u▒▒▒DH▒[H▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒1▒f▒9MZuHcQ<Hс9PE▒▒1▒f▒y
+                                                                    ▒▒▒@HcA<H▒▒AD▒AH▒DfE▒▒t2A▒H▒H▒
+                  ▒L▒L▒(▒D▒@
+                            L▒▒L9▒H9▒r
+                                      H▒▒(L9▒u▒1▒▒WVSH▒▒ H▒▒▒▒rH▒w{H▒d▒1▒f▒:MZuYHcB<HЁ8PEuJf▒x
+@H▒▒(H9▒t'AH▒▒H▒▒▒fr▒▒u▒H▒▒H▒▒ [^_▒▒1▒H▒▒H▒▒ [^_▒L▒ْ1▒fA▒8MZuIcP<L:PE▒▒f▒z
+                                                                         u▒▒BL)▒D▒BH▒DfE▒▒t.A▒P▒H▒▒L▒L▒(@D▒@
+                            L▒▒L9▒H9▒r▒H▒▒(L9▒u▒1▒▒▒H▒Y▒1▒f▒8MZuHcP<HЁ8PEt     ▒▒▒fDf▒x
+       u▒▒H▒▒▒f▒L▒▒1▒fA▒8MZuIcP<L:PE▒▒f▒z
+                                         u▒▒BD▒BH▒DfE▒▒t,A▒P▒H▒▒H▒T▒(▒▒@' t    H▒▒t▒H▒▒H▒▒(H9▒u▒1▒▒ff.▒f▒H▒▒▒1▒f▒8MZuHcH<H▒▒9PEt        H▒▒▒Df▒y
+                                                                HD▒H▒▒▒f.▒H▒Y▒1▒f▒:MZuLcB<I▒A▒8PE▒▒fA▒x
+                       u▒H)▒E▒HA▒PI▒TfE▒▒t▒A▒A▒H▒▒L▒L▒(f.▒D▒B
+                                                             L▒▒L9▒H9▒r
+                                                                       H▒▒(I9▒u▒1▒ËB$▒▒▒▒▒▒L▒ɐE1▒fA▒;MZA▒▒uIcK<Lف9PEt
+                                     L▒▒▒▒f▒y
+                                             u싁▒▒▒t▒▒QD▒QH▒TfE▒▒t▒A▒J▒H▒
+                                                                         ▒L▒T▒(DD▒J
+   L▒▒L9▒H9▒rH▒▒(L9▒u▒E1▒L▒▒▒@L▒▒
+                                 A▒▒H▒▒▒H▒▒u▒P
+                                              ▒▒t▒E▒▒▒D▒H
+                                                         M▒L▒▒Ð▒QPH=H▒L$rH▒▒H▒ H-H=w▒H)▒H▒      XYÐ▒▒▒▒▒▒▒▒▒▒▒▒▒WVSH▒▒0L▒▒H▒▒H▒▒▒
+                                                 dH▒|$ I▒▒E1▒H▒ڹ`▒▒(H▒ى▒▒Yd▒▒H▒▒0[^_Ð▒▒▒▒▒▒▒▒▒▒▒▒▒▒H▒▒hH▒▒A▒▒A▒▒H▒D$PH▒щT$XfA▒▒▒utH▒▒H▒▒        ▒▒▒▒▒▒▒A▒▒¿▒▒▒▒҉D&xL▒L$0L▒L$DD▒D$(L▒D$PH▒D$8D▒\$ ▒7H▒▒h▒fDfA▒▒▒u▒H▒▒H▒▒ ▒▒▒▒▒    ▒t/▒D$D1▒1▒땐1▒1▒▒f.▒▒▒ÿ▒▒▒k▒▒▒▒▒1▒▒^▒▒▒@WVSH▒▒ A▒@▒▒9▒H▒▒Nׅ▒A▒H
+                                               L▒▒I▒9▒▒▒A▒@
+                                                           ▒▒▒▒▒W▒▒▒▒▒▒▒zH▒▒▒HcC$▒
+  ▒S$▒▒▒S$H9▒t3▒H▒▒▒▒@▒S$9S(~▒▒N▒H▒▒▒ t▒▒m▒S$▒▒▒S$H9▒u͋C
+                                                       ▒H▒▒K
+                                                            ▒▒,▒_f▒HcC$▒ D▒C
+                                                                            ▒S$▒▒A▒H▒▒S$▒K
+          E▒▒~5▒▒▒@u
+                    ▒S$A▒▒9S(~▒H▒▒▒ tĹ ▒lD▒C
+                                            ▒S$▒▒▒C
+                                                   ▒▒▒▒H▒▒ [^_▒f▒A▒)▒A▒H
+                                                                        ▒▒ui▒▒A▒H
+ ▒0▒HcC$▒ D▒C
+             ▒S$▒▒A▒H▒▒S$▒K
+                           E▒▒▒▒▒▒▒▒▒▒@u
+                                        ▒S$A▒▒9S(~▒H▒▒▒ t▒▒ ▒&lD▒C
+                                                                  ▒S$▒D▒W▒▒▒▒▒▒▒▒▒▒▒K
+     ▒6▒▒▒f▒AWAVAUATUWVSH▒▒HL▒l$(H▒|$0▒▒L▒▒1▒H▒▒M▒▒H▒▒▒b▒C9Ɖ▒Nօ▒▒C
+                                                                  I▒9▒▒!▒C
+                                                                          ▒▒▒▒D▒f▒▒▒▒▒1▒A▒▒fD▒TuM▒▒H▒▒▒hb▒▒~q▒▒I▒▒L▒|▒▒HcS$▒
+                                            ▒C$▒▒▒C$M9▒t7▒I▒▒▒▒@▒C$9C(~▒A▒N▒H▒▒▒ t▒H▒▒▒2k▒C$▒▒▒C$M9▒u▒H▒▒D▒▒)▒▒▒▒{▒▒▒▒C
+                                       ▒H▒▒K
+                                            ▒▒'▒]@HcS$▒ D▒C
+                                                           ▒C$▒▒A▒H▒▒C$▒K
+                                                                         E▒▒~8▒▒@u
+  ▒C$A▒▒9C(~▒H▒▒▒ t▒H▒¹ ▒jD▒C
+                             ▒C$▒▒C
+                                   ▒▒▒▒H▒▒H[^_]A\A]A^A_Ë)▒▒C
+                                                            ▒▒▒▒ub▒▒▒C
+                                                                      ▒/▒HcC$▒ D▒C
+  ▒S$▒▒A▒@▒▒S$▒C
+                E▒▒▒▒▒▒▒▒▒▒@u
+                             ▒S$A▒▒9S(~▒H▒▒▒ t▒▒ ▒.jD▒C
+                                                       ▒S$▒D▒f▒▒▒▒u▒▒▒▒H▒▒K
+                                                                           ▒2▒▒▒ff.▒UAWAVAUATWVSH▒▒8H▒l$01▒E▒pE▒▒AI▒A▒▒L▒Ã▒o▒▒A▒▒▒▒▒▒▒▒f▒{ tA▒▒A▒▒▒▒▒M▒▒I▒▒!D▒▒s
+                                                                               9Ɖu▒M▒H▒H▒▒H▒▒▒▒b▒▒▒A▒H)▒L▒d$ A▒▒o▒wA▒H▒▒▒q▒▒▒▒▒▒▒E▒▒▒▒A▒~▒L▒▒▒H▒▒0Hc▒I▒▒H▒▒ViL9▒▒▒H▒▒▒M▒L)▒▒▒9▒▒▒▒C
+                   ▒▒▒▒A▒▒o▒▒I9▒▒▒▒A▒▒▒▒▒A▒▒▒▒▒▒▒HcC$▒
+                                                      ▒C$▒▒▒C$I9▒s8▒H▒▒▒▒@▒C$9C(~ށ▒ ▒H▒t▒▒h▒C$▒▒▒C$I9▒r▒E▒▒▒R@HcC$▒ ▒C$▒▒▒C$A▒▒r7▒▒▒@▒C$9C(~▒▒ H▒t˹ ▒Ah▒C$▒▒▒C$A▒▒s▒H▒[^_A\A]A^A_]Ð▒K
+                     9▒▒M▒M▒H▒H▒▒H▒▒▒▒▒▒▒▒▒A▒H)▒L▒d$ H▒▒▒▒▒▒▒E▒▒L▒▒A▒▒ D▒▒I▒▒H▒▒!▒D▒@0▒▒7D      ▒E▒▒A▒▒9AF▒H▒▒F▒H▒▒u▒L9▒▒S▒▒▒E▒▒▒▒H▒▒D▒▒L)▒)Ѕ▒▒_A▒▒o▒▒▒E▒9▒▒A▒▒A)▒D▒{
+     ▒▒▒E▒▒▒DE▒o▒▒▒▒▒E▒▒▒ fDHcC$▒ ▒C$▒▒▒C$A▒▒r7▒▒▒@▒C$9C(~▒▒ H▒t˹ ▒g▒C$▒▒▒C$A▒▒s▒A▒▒▒▒▒I9▒▒ ▒▒▒▒▒▒▒fDA▒▒▒▒▒tA▒▒▒▒▒A▒▒o▒▒H▒▒▒M▒L)▒9▒▒=A▒▒A)▒D▒{
+                                                              ▒▒▒▒fDA▒H
+                                                                       9ȉM▒L▒H▒H▒▒H▒▒▒▒M▒▒▒▒A▒H)▒L▒d$ ▒▒▒▒▒DL▒▒E▒▒▒'▒▒▒H▒V▒M▒▒0H▒▒H▒▒L)▒▒▒9▒▒▒▒▒▒D▒}▒A)▒D▒{
+                                                                           A▒▒o▒▒▒▒▒E▒▒▒▒▒▒▒▒▒%=▒▒▒▒▒Mc▒▒0H▒▒M▒▒▒fJ▒>A▒▒▒▒▒▒]D▒▒▒H▒▒▒M▒L)▒▒▒9▒|▒▒C
+                                                                  ▒▒▒▒▒▒▒▒f▒I9▒▒▒▒▒▒▒,▒▒▒f▒A▒▒E▒▒▒▒D▒.H▒F▒F0I9▒▒=▒▒▒E▒o▒H▒▒▒▒▒▒▒C
+                                                 ▒▒▒▒H▒▒A▒▒▒▒▒▒t▒D▒.H▒FA▒▒▒▒▒▒F0▒D▒x▒▒▒▒▒▒▒0I▒s▒▒▒▒▒▒뾉▒%=▒▒▒▒▒Mc▒▒0H▒▒M▒▒▒"eJ▒>▒▒▒▒▒D▒(A▒▒▒▒▒H▒▒▒@▒0▒T▒▒▒E▒▒xD▒.H▒▒▒F▒0▒\▒▒▒▒▒%=u▒▒▒UAWAVAUATWVSH▒▒(H▒l$ 1▒D▒r▒E▒▒AI▒H▒Ӄ▒▒▒t
+                                                             f▒z ▒▒▒s
+                                                                     9▒M▒H▒H▒▒H▒▒▒▒+▒▒▒H)▒L▒d$ @▒ǀtH▒▒▒▒@▒▒▒H▒▒▒I▒▒A▒▒M▒▒I▒▒▒▒▒▒▒▒▒A▒▒M9▒t+E▒▒t&f▒{ tL▒▒L)▒L!▒H▒▒uA▒,I▒▒▒H▒▒M▒hI▒▒H▒▒H▒▒L▒<▒M▒L)▒▒▒0A▒H▒▒       v       H▒▒M▒▒롐E▒▒~+L▒▒E▒▒L)▒A)▒E▒▒▒Mc▒L▒▒0M▒▒M▒▒cM9▒▒▒E▒▒▒▒▒K▒▒▒▒L▒▒L)▒)Ɖs
+                                            ▒▒▒▒▒▒▒▒▒E▒▒▒>▒▒uu▒V▒▒S
+                                                                   ▒&DHcC$▒ ▒K
+                                                                              ▒C$▒▒▒▒Q▒▒C$▒S
+            ▒▒~G▒▒@u
+▒C$▒▒9C(~ށ▒ H▒t¹ ▒▒b▒K
+                      ▒C$▒▒▒▒Q▒▒C$▒S
+                                    ▒▒▒▒@▒ǀ▒▒A▒E-I▒uI9▒r ▒SfDHcC$▒
+                                                                  ▒C$▒▒▒C$I9▒t8▒H▒▒▒▒@▒C$9C(~ށ▒ ▒H▒t▒▒Qb▒C$▒▒▒C$I9▒uȋC
+                                      D▒@▒D▒C
+                                             ▒▒$▒Rf▒HcC$▒ ▒S
+                                                            ▒C$▒▒D▒B▒▒C$D▒C
+                                                                           ▒▒~0▒▒▒@u
+    ▒C$D▒▒9C(~▒H▒▒▒ tŹ ▒▒a▒S
+                            ▒C$▒▒H▒[^_A\A]A^A_]▒▒▒▒t0A▒E+I▒u▒▒▒▒f▒▒▒A▒▒▒▒▒I▒▒H▒▒!▒▒7▒▒▒f▒L▒▒@▒▒@▒▒▒▒▒A▒E H▒▒▒▒▒▒▒DM9▒▒
+▒▒▒L▒▒▒0L▒h▒▒▒▒▒▒H▒▒▒$▒▒▒▒D▒~▒D▒{
+                                 E▒▒x}▒▒▒w▒▒▒A▒W▒▒S
+                                                   E▒▒▒ ▒▒▒▒b▒▒▒L▒▒▒DM▒▒E▒▒E▒▒▒n▒▒▒▒▒▒▒▒▒A▒▒▒v▒%=u▒D▒vL▒▒0D)▒Mc▒M▒▒M▒▒▒`▒s
+                                          ▒▒▒▒▒▒%=▒q▒▒▒▒▒▒s
+                                                           E▒▒u▒▒▒▒▒▒@UATWVSH▒▒0H▒l$0▒y▒H▒▒▒▒▒Qf▒▒▒▒HcCH▒▒H▒▒H▒▒▒▒3▒▒▒H)▒L▒E▒H▒E▒H▒t$ H▒▒▒W▒▒▒▒▒▒L▒d▒DHcS$▒
+                                                                           ▒C$▒▒▒C$L9▒t6▒H▒▒▒▒@▒C$9C(~▒▒N▒H▒▒▒ t▒H▒▒▒▒_▒C$▒▒▒C$L9▒u▒H▒▒H▒▒[^_A\]▒▒▒▒▒@▒C$9C(~H▒▒▒ ▒▒HcS$▒.▒C$▒▒▒C$H▒▒[^_A\]▒f▒H▒E▒H▒u▒▒_H▒M▒I▒▒A▒H▒▒zW▒▒~N▒U▒f▒S▒C▒▒▒▒▒fD▒▒▒@▒C$9C(~H▒▒▒ u=HcS$▒.▒C$▒▒▒C$H▒▒▒=▒▒▒▒▒S▒f▒H▒¹.▒▒^▒C$▒R▒▒▒H▒¹.▒▒^▒C$▒f▒UWVSH▒▒(A▒H▒׉▒A▒Q
+    D▒▒L▒▒E▒▒▒|A9▒_A▒ID)▒9▒▒▒)ʉS
+                                ▒▒▒+▒▒▒S
+                                        ▒▒~     ▒▒▒▒▒▒~=▒▒▒▒▒▒▒▒J▒▒K
+                                                                    ▒▒t(▒▒u#▒▒DA▒A
+  ▒▒▒▒▒▒▒▒▒▒▒/▒▒▒&▒@▒▒K
+                       A▒▒A▒▒@▒▒~▒▒▒▒▒)▒▒▒▒▒▒▒▒tqH▒▒D▒▒▒▒@▒S$9S(~H▒▒▒ udHcC$▒
+                                                                             ▒S$▒▒▒S$▒▒te▒▒▒t▒f▒{ t▒i֫▒▒▒▒▒UUUUw▒H▒K I▒غ▒▒▒▒▒▒▒▒u▒▒▒0A▒0▒D▒▒▒`]▒S$▒▒▒S$▒▒u▒▒C▒▒s▒C      ▒Q▒▒▒CH▒▒([^_]▒f▒▒▒▒▒A▒I▒▒9▒▒▒▒▒▒▒C
+                                          ▒▒▒▒▒▒▒▒▒▒▒f.▒▒▒@▒▒▒S$9S(▒▒▒▒▒S$▒▒▒▒DH▒▒▒@▒▒▒▒C▒?H▒▒D▒▒D▒A▒▒@▒S$9S(~A▒▒ H▒u?HcC$▒
+                                           ▒S$▒C▒▒▒S$▒▒▒C▒▒▒A▒▒▒▒▒▒u▒▒0A▒0▒▒D▒▒▒X\▒S$▒C▒H▒▒▒ ▒▒HcC$▒-▒S$▒▒I▒▒▒▒E▒▒▒OH▒▒▒ ▒?HcC$▒0▒S$▒C▒▒▒S$▒▒▒▒▒b▒H▒▒▒X▒▒▒▒▒▒▒▒▒▒C▒▒▒C▒ HcS$▒0▒C$▒▒▒C$▒▒▒▒▒▒▒▒▒▒@▒C$9C(~▒H▒▒▒ t▒H▒¹0▒[▒C$▒▒@▒J▒▒K
+                                                                 ▒▒▒z▒▒▒▒▒▒q▒▒▒▒▒▒S
+   ▒1f▒HcC$▒ D▒C
+                ▒K$▒▒▒A▒P▒▒K$▒S
+                               E▒▒▒▒▒▒▒▒@u
+                                          ▒K$A▒▒9K(~▒H▒▒▒ t▒▒ ▒[D▒C
+                                                                   ▒K$▒▒f.▒▒▒@▒7H▒▒▒ ▒!HcC$▒+▒S$▒▒▒▒▒▒▒▒▒▒K
+                           ▒:▒HcC$▒0▒D▒C
+                                        ▒S$A▒▒A▒▒@▒▒A▒H▒▒S$▒K
+                                                             E▒▒▒▒▒▒▒A▒▒A▒▒@u
+                                                                             ▒S$A▒▒9S(~▒H▒▒▒ t▒▒0▒eZ▒▒▒▒▒▒▒▒▒▒▒1▒▒▒▒fA▒y ▒▒▒▒A▒H▒▒▒▒▒A▒▒▒▒▒H▒▒H▒▒!▒▒▒▒▒▒▒▒▒D▒▒D)▒▒▒▒▒A▒▒A҉S
+          ▒▒▒▒▒▒▒▒▒▒▒▒DA▒A
+                          ▒▒▒▒▒▒▒▒▒▒]▒▒▒fD▒S$9S(▒▒▒▒▒▒▒▒▒▒▒S$9S(▒▒▒▒▒▒▒▒▒▒f▒{ ▒%▒▒▒▒NA▒▒▒▒▒A▒▒I▒▒H▒▒!▒▒▒d▒▒▒▒▒▒▒▒-▒nY▒S$▒▒{▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒f▒{ u▒▒▒▒▒▒f.▒▒▒▒▒A▒Q▒▒▒▒▒▒▒ty▒▒A▒Q
+                     ▒▒▒▒fD▒▒@u
+                               ▒S$9S(▒▒▒▒H▒▒▒ u:HcC$▒ ▒S$▒▒▒▒▒▒▒0▒▒X▒S$▒▒▒▒▒+▒▒X▒S$▒▒▒▒▒▒▒ ▒X▒S$▒▒▒▒▒▒▒A▒Q
+▒BA▒H▒D$DH▒T$0▒▒|$0L▒L$HH▒D$ ▒▒▒▒D▒D$HH▒▒A▒▒▒▒▒▒▒▒L$DH▒▒I▒▒▒I▒▒▒▒C
+                                                                  D▒@▒D▒C
+                                                                         ▒▒.▒▒DHcC$▒ ▒S
+       ▒C$▒▒D▒B▒▒C$D▒C
+                      ▒▒▒▒▒▒▒@u
+                               ▒C$D▒▒9C(~▒H▒▒▒ t▒▒ ▒W▒S
+                                                       ▒C$▒▒▒D$D▒▒C▒▒▒▒▒▒tn▒-▒D$LL▒L$LH▒D$M▒D▒▒u▒▒ D▒▒D!▒A▒▒D▒▒▒▒A▒▒D▒▒D        ▒I▒▒f▒N▒▒▒      ▒L▒ɈPH▒PD)▒▒▒▒▒H▒▒▒▒H▒▒X[^▒@▒▒u ▒▒@u▒L▒L$LL▒▒▒▒▒+▒m▒▒▒ff.▒ATUWVSH▒▒ ▒A▒▒H▒▒A▒▒L▒▒Ic▒A▒▒Hi▒gfffH▒▒"D)▒t!DHcу▒Hi▒gfff▒▒H▒▒")ȉ▒u▒C,▒▒▒u
+                                    ▒C,▒9▒L▒C
+                                             ▒U9▒~Y)▒D▒C▒▒A9▒}K▒D)▒▒C
+                                                                     ▒▒E▒▒▒w▒▒▒C
+                                                                               t9E▒▒▒x▒▒▒▒▒D▒@▒D▒C
+                  E▒▒t"▒▒u▒o▒C
+                              ▒▒▒▒▒▒▒E▒▒▒{▒▒▒▒▒▒@▒▒D▒C
+                                                      ▒▒%@E▒▒~▒с▒▒▒▒▒▒▒▒▒▒▒0A▒0▒▒▒▒C$9C(~H▒▒▒ ▒hHcS$▒
+                     ▒C$▒▒▒C$▒C▒▒▒A▒▒A▒▒@▒▒▒H▒▒▒▒▒▒▒▒C▒P▒▒▒▒▒S^▒PH▒▒D▒▒A▒▒A▒▒@▒S$9S(~#H▒▒▒ HcC$▒
+                ▒▒S$A▒▒A▒▒@▒▒▒S$▒S▒J▒▒K▒▒▒
+▒▒▒u▒▒0A▒0▒fD▒▒▒▒▒▒E▒▒▒▒▒▒▒D▒@▒D▒C
+                                  E▒▒▒-▒▒▒$▒▒▒C
+                                               ▒,@HcS$▒ D▒C
+                                                           ▒K$▒▒▒A▒@▒▒K$▒C
+                                                                          E▒▒▒l▒▒▒▒▒@u
+      ▒K$A▒▒9K(~▒H▒▒▒ t▒H▒¹ ▒[TD▒C
+                                  ▒K$▒▒▒H▒▒D▒▒▒▒▒▒H▒▒D▒▒▒-T▒C$▒▒▒▒DD▒▒▒T▒▒S$A▒▒A▒▒@▒▒▒▒▒A▒▒A▒▒@f▒▒S,▒▒▒▒ ▒S▒▒E▒▒▒▒E▒▒▒S$9S(~H▒▒▒ ubHcC$▒
+                                                        ▒S$▒▒k
+                                                              ▒▒H▒▒S$H▒▒H▒▒ [^_]A\▒▒▒▒▒▒▒▒@▒▒H▒▒▒ ▒HcS$▒-▒C$▒▒▒▒C$▒i▒▒▒f▒▒[S▒S$▒fD▒▒@▒▒H▒▒▒ ▒HcS$▒+▒C$▒▒A▒▒D▒C
+                                                                              ▒6fDHcS$▒0▒D▒K
+            ▒K$▒▒%@▒▒E▒A▒▒K$D▒C
+                               E▒▒▒▒▒▒▒▒%@u
+                                           ▒K$E▒▒9K(~▒H▒▒▒ t▒H▒¹0▒R▒D▒C$9C(▒?▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒C$9C(▒▒▒▒▒0▒▒▒H▒¹-▒jR▒C$▒▒▒▒▒▒▒▒▒@u
+                                                         ▒C$9C(▒▒▒▒▒H▒▒▒ u+HcS$▒ ▒C$▒▒▒▒▒H▒¹+▒R▒C$▒▒▒▒▒H▒¹ ▒R▒C$▒▒▒▒▒ff.▒▒UWVSH▒▒h▒BL▒D▒H▒Ӆ▒▒▒▒▒D▒▒L▒T$PL▒▒D▒\$Xd[▒D$(▒D$ ▒SD▒D$@▒▒H▒Ɓ▒▒A▒▒▒▒▒tjI▒▒H▒▒▒?▒▒▒H▒▒▒w▒H▒▒h[^_]▒Df▒▒▒▒p▒▒▒L▒▒H▒▒ ▒▒▒▒▒D       ▒▒▒▒1▒▒[▒▒▒▒B▒▒▒▒▒▒▒C▒▒▒▒f▒▒▒▒▒D$P-▒H▒T$Q▒▒=-o▒▒ H▒▒D▒▒!▒▒▒D▒▒▒▒A▒▒D   ▒6ZH▒T$0L▒L$D1▒▒D$ ▒D$D▒D▒D$@1▒H▒▒A▒▒▒▒▒▒▒▒▒▒▒C▒▒▒▒▒▒+▒▒ul$PH▒T$8▒@t&▒ ▒T$PH▒T$Q▒ ▒▒▒▒▒ÿ▒▒▒1▒▒▒▒H▒▒▒▒▒▒▒WVSH▒▒PD▒B▒)H▒▒E▒▒▒/▒H▒D$DH▒T$0▒▒|$0L▒L$HH▒D$ ▒▒▒▒▒▒|$HH▒Ɓ▒▒▒▒▒
+      ▒▒▒▒▒▒▒S9▒▒▒▒▒▒▒)▒▒S▒L$DA▒▒I▒▒H▒▒▒Q▒▒▒▒C
+                                              D▒@▒D▒C
+                                                     ▒▒"▒tHcC$▒ ▒S
+                                                                  ▒C$▒▒D▒B▒▒C$D▒C
+ ▒▒~T▒▒▒@u
+          ▒C$D▒▒9C(~▒H▒▒▒ tŹ ▒▒N▒S
+                                  ▒C$▒▒▒▒u4H▒▒▒▒N▒▒▒C▒L$DI▒▒A▒▒H▒▒▒▒▒▒H▒▒▒▒▒H▒▒P[^_▒▒C▒▒▒▒▒BA▒▒▒▒▒▒fD▒BA▒▒▒▒▒▒fD▒T$D▒▒C▒▒▒▒▒▒tn▒-▒T$LL▒L$LH▒T$M▒▒=▒l▒▒ H▒▒D▒▒!▒▒▒D▒▒▒▒A▒▒▒ND    ▒I▒؃▒▒f▒z▒       ▒L▒ɈB▒D)▒▒I▒▒▒H▒▒▒1▒H▒▒P[^_▒▒▒▒uK▒ ▒@u▒L▒L$LL▒▒▒▒H▒▒▒▒M)▒▒C▒j▒▒▒▒S
+                  ▒▒▒_▒▒▒ЉC
+                           ▒U▒▒▒▒▒+▒=▒▒▒fDAUATUWVSH▒▒XL▒▒I▒▒E▒@f▒▒u     H▒▒▒▒D▒R▒A▒▒▒▒I▒▒▒M▒▒▒▒D▒H▒l$0H▒▒E▒▒E▒▒A▒A▒▒ ▒+DH9▒r
+                                            ▒s▒▒▒H▒▒0▒H▒qI▒▒▒▒▒"D▒ȃ▒▒▒▒▒▒K▒▒~▒▒▒KH▒▒▒t▒▒▒       v▒7D    ▒▒f▒▒▒I▒▒D)▒▒▒H▒▒L▒▒▒▒H▒▒D▒RD)▒I▒▒▒▒H▒▒I▒▒A▒P▒?▒▒▒A▒▒▒v▒▒1▒E1▒D)▒▒▒H▒▒H▒D)▒▒▒H▒▒I▒▒H▒▒u▒E▒▒u▒D▒H▒l$0H▒▒A▒t
+▒D$0.H▒D$1▒K
+            ▒0H▒p▒▒▒KD▒▒A▒▒▒@A▒▒▒▒▒A▒▒▒▒A▒▒@▒g▒▒▒▒A▒▒ H▒▒oHcC$▒0D▒▒C$D▒▒@D▒▒▒▒▒▒ ▒C$▒▒X▒▒▒▒A▒▒ H▒▒▒H▒▒
+                      ▒C$▒S
+                           ▒▒▒C$▒▒~{D▒A▒▒tn▒▒▒S
+                                               ▒&fDH▒▒0▒K
+                                                         ▒C$▒▒▒Q▒▒C$▒S
+                                                                      ▒▒~DD▒A▒▒@u▒▒9C(~▒A▒▒ H▒tĹ0▒▒J▒K
+                      ▒C$▒Q▒▒▒▒C$▒S
+                                   ▒▒▒@L▒l$.H9▒r▒m@▒C f▒D$.f▒▒▒.H9▒tR▒N▒H▒▒▒Ȁ▒.▒▒▒,t▒D▒A▒▒@▒S$9S(~A▒▒ H▒▒lHcK$▒
+▒S$▒▒▒S$H9▒u▒▒S▒D▒B▒D▒C▒▒6▒▒HcC$▒0▒▒K▒S$A▒▒A▒▒@▒▒D▒A▒▒S$D▒C▒▒▒▒A▒▒A▒▒@u
+                                                                       ▒S$D▒▒9S(~▒H▒▒▒ t▒▒0▒▒I▒@H9▒rE▒▒u▒K▒▒▒k▒.H▒N▒    ▒▒▒▒▒▒0H▒▒▒H9▒▒▒▒K
+                                                          ▒▒▒▒▒▒▒▒SI▒▒A▒▒I)▒F▒
+▒▒D▒▒EOˁ▒▒▒▒I▒▒A▒▒▒Hi▒gfff▒▒E▒▒H▒▒")▒▒X▒Hc▒▒▒A▒▒Hi▒gfffH▒▒")Љ▒u▒E▒▒E)▒A▒▒E▒▒D9▒▒▒D)▒A▒▒▒▒▒▒▒K
+             ▒8fDHcC$▒ D▒D▒K
+                            ▒C$D▒▒@▒▒A▒I▒▒C$▒K
+                                              E▒▒▒▒▒▒▒D▒▒@u
+                                                           ▒C$A▒▒9C(~▒A▒▒ H▒t▒▒ ▒H▒H▒▒▒▒▒▒▒H▒▒▒▒▒▒▒▒▒▒I▒غL▒▒▒▒▒▒▒▒▒▒A▒▒A▒▒@fD▒▒▒▒ ▒▒PE▒▒▒S$9S(~H▒▒▒ ▒▒HcC$▒
+                                                                           ▒▒S$Dc
+▒H▒▒▒S$H▒ډH▒▒X[^_]A\A]▒q▒▒▒▒▒
+                             H▒S$▒▒▒▒▒▒uT▒C$;C(|L▒▒▒C$▒C$9C(▒#▒▒▒▒▒D▒▒▒C$▒▒ ▒▒X9C(▒b▒▒▒A▒▒ H▒▒J▒▒▒▒G▒C$▒E▒▒▒DA▒▒ H▒▒-▒▒HcC$▒-D▒▒C$D▒▒@▒▒▒C$▒▒▒▒▒▒▒▒▒D▒K
+                                                                       ▒▒@▒r▒▒▒f.▒▒KG▒▒S$▒▒▒▒▒0▒6GD▒▒C$D▒▒@▒▒▒▒▒▒▒tTA▒▒ H▒▒+uUHcC$▒+D▒▒C$D▒▒@▒s▒▒▒fDE▒▒▒▒1▒E1▒E1Һ▒▒▒▒D▒C$;C(|▒▒▒▒▒▒▒ ▒FD▒▒C$D▒▒@▒!▒▒▒@I▒▒▒I▒▒▒▒E▒▒▒S▒▒▒▒R▒▒▒f.▒▒▒▒▒▒▒▒H▒▒▒▒▒▒▒▒u
+                                                                               ▒C$;C(▒\▒▒▒A▒▒ H▒u▒HcC$▒ D▒▒C$D▒▒@▒▒▒▒▒▒C▒▒▒▒▒▒▒▒▒▒▒A▒▒▒▒▒▒D▒1▒E1▒H▒l$0▒▒▒▒▒f▒AWAVAUATUWVSH▒▒L▒▒$▒▒H▒▒D▒▒L▒▒▒}E▒▒▒`1ҋ▒▒$▒H▒^H▒l$p▒D$0H▒▒▒▒▒▒▒▒▒H▒▒$▒1▒f▒▒$▒▒ȉ|$x▒D$|▒▒▒▒Ǆ$▒f▒▒$▒Ǆ$▒Ǆ$▒▒▒▒▒▒▒▒L▒|$|L▒%Ub▒I▒T$x▒▒$▒▒▒@u    9▒$▒~L▒D$p▒▒ umHc▒A▒▒▒▒▒$▒▒H▒▒▒ȅ▒▒▒▒▒%u▒▒▒|$xH▒D$|▒▒▒▒▒▒▒▒H▒▒M▒▒E1▒E1▒▒P▒H▒n▒Ȁ▒Zw"▒▒Ic▒L▒▒▒fDL▒▒▒D▒fD▒▒0<       ▒JA▒▒▒@E▒▒▒A▒M▒▒tA▒▒▒▒B ▒▒▒DA▒A▒f.▒▒FH▒▒▒▒x▒▒▒▒▒▒$▒▒▒H▒Ĩ[^_]A\A]A^A_▒▒d$x▒▒▒▒A▒▒▒k      A▒▒▒▒   A▒EA▒▒▒▒▒A▒▒▒▒HE▒H▒D$`▒▒u▒▒     L▒D$pH▒▒▒▒▒▒▒▒▒f▒▒FA▒H▒▒A▒▒_▒▒▒▒L$x▒I▒A▒▒▒IcMA▒▒tA▒▒▒H▒▒A▒▒HD▒H▒T$pI▒▒H▒▒▒▒▒▒▒▒Y▒▒▒E▒▒u
+9|$x▒▒I▒UI▒L▒D$p▒xI▒▒H▒▒▒1▒▒▒▒(▒▒▒▒F<h▒H▒▒A▒A▒▒▒▒▒▒▒L$0▒CCH▒▒H▒▒H▒`HD؋▒$▒▒▒▒▒Hc▒H▒▒▒7L▒D$pH▒ى▒▒)▒▒▒f▒H▒▒▒▒▒▒I▒UHc▒$▒A▒▒▒▒A▒▒▒A▒▒t
+;▒$▒▒▒▒▒H▒T$p▒▒ ▒Hc▒▒%▒▒▒▒▒@▒F▒L$xH▒▒A▒▒▒▒▒▒D$xI▒M▒▒ ▒D$x▒▒ ▒H▒ I▒▒D▒▒▒I▒▒ A▒▒▒▒A▒▒▒▒▒A ▒D▒▒▒▒D ▒▒▒D    ▒A▒▒▒A)▒A▒▒▒Yf▒▒▒D▒▒f▒▒▒▒▒f▒▒▒u E▒▒▒▒f▒▒▒?▒▒A▒▒A▒EI▒Ǆ$▒▒▒▒▒A▒▒▒sH▒L$`L▒D$p▒D$`I▒ݺH▒▒▒▒▒▒▒▒▒A▒▒I▒]A▒▒▒*H▒^H▒▒HD؋▒$▒▒▒▒   Hc▒H▒▒▒5L▒D$pH▒ى▒▒6▒▒▒fDI▒▒▒▒▒▒D$xI▒U▒▒ ▒D$x▒▒{▒*H▒L$@H▒T$p▒|$@▒▒▒▒▒▒ɋD$xI▒U▒▒ ▒D$x▒▒▒*H▒L$@H▒T$p▒|$@▒▒▒▒▒뛋D$xI▒U▒▒ ▒D$x▒▒▒▒*H▒L$@H▒T$p▒|$@▒O▒▒▒▒j▒▒▒E▒▒▒▒▒▒▒▒F▒L$x@H▒▒▒▒▒▒▒E▒▒▒▒▒▒▒▒F▒L$xH▒▒▒▒▒▒A▒▒▒▒FA▒H▒▒▒▒▒▒E▒▒▒▒▒F▒L$xH▒▒▒▒▒▒▒D$xI▒M▒▒▒▒▒▒I▒ȉ▒I▒▒ ▒▒     ▒E▒▒▒▒A▒▒▒▒▒D    ʁ▒▒▒VH▒L$ ▒D$ ▒|$ H▒T$(f▒▒y
+                                           ▒▒D$xE▒▒A▒▒▒A▒▒▒▒A▒▒▒A▒▒A    ▒▒▒▒▒▒E▒▒▒Ǆ$▒▒▒▒▒f▒▒▒▒▒▒▒▒▒ ▒@▒oH▒L$`H▒ʃ▒ ▒5▒]H▒▒L▒D$p▒؈ǃ▒F     ▒B▒f▒Z▒)▒▒C▒▒▒▒▒▒▒Ǆ$▒▒▒▒▒I▒A▒EH▒L$`L▒D$pI▒ݺH▒▒f▒D$`▒▒▒▒▒▒▒▒▒D$xI▒U▒▒C▒▒▒H▒T$ ▒D$ H▒T$pH▒L$@▒|$@▒▒▒▒▒▒▒▒▒D$xI▒U▒▒▒▒▒▒H▒T$ ▒D$ H▒T$pH▒L$@▒|$@▒▒▒▒▒▒u▒▒▒▒D$xI▒U▒▒▒▒▒▒H▒T$ ▒D$ H▒T$pH▒L$@▒|$@▒i▒▒▒▒D▒▒▒▒D$x▒▒$▒▒▒@u 9▒$▒~H▒T$p▒▒ ▒▒Hc▒▒%▒▒▒▒$▒H▒▒▒▒▒▒▒E▒▒▒{▒▒▒H▒L$`L▒\$8D▒T$▒T$^f▒▒$▒▒▒$▒▒FH▒▒▒▒▒▒E▒▒▒▒▒▒▒▒F▒L$H▒▒▒▒▒▒▒M▒▒▒9▒▒▒A▒▒▒▒▒▒▒ZA▒EI▒A▒▒▒▒▒▒FI▒▒H▒▒E1▒▒▒▒▒E▒▒▒▒▒▒▒▒F▒L$xH▒▒▒▒▒▒I▒]H▒▒YH▒▒HD؋▒$▒▒▒▒▒H▒▒Hc▒▒1L▒D$pH▒ى▒▒▒▒▒▒▒▒▒▒H▒D$ f▒▒▒▒Hf▒▒<▒4D▒¹<D)▒H▒▒▒f▒▒▒?H▒▒H▒▒L▒D$p▒▒▒▒▒▒▒▒▒A▒▒▒▒▒▒▒0A▒▒▒DD▒▒▒▒▒▒Ǆ$▒▒▒▒▒▒▒▒▒▒+▒T$`H▒L$`H▒T$a▒▒ H▒▒A▒▒▒▒AA▒▒N▒B▒D▒B▒D▒B▒L▒D$p)▒▒L▒▒▒▒▒▒▒H▒▒▒'<L▒D$pH▒ى▒▒0▒▒▒▒▒▒▒▒▒FE1▒H▒▒A▒▒m▒▒▒H▒ɸ▒▒▒E▒▒;▒▒▒H▒▒A▒A▒▒I▒▒▒▒ ▒@▒c▒▒▒H▒L$`H▒▒▒d▒▒▒
+                                                                ▒▒D$x▒▒▒▒▒Ǆ$▒▒▒▒▒▒D$x▒▒▒▒f▒▒▒▒▒▒▒H▒▒▒▒▒▒E▒▒▒▒▒▒▒▒▒J▒▒▒H▒▒▒▒▒▒H▒▒R▒▒▒▒▒0▒FH▒▒A▒
+                                                              ▒▒▒▒▒H▒▒▒P;L▒D$pH▒ى▒▒Y▒▒▒▒4▒▒▒▒FA▒H▒▒Ǆ$▒L▒▒$▒▒▒▒▒▒▒▒▒▒▒H▒▒▒ ;L▒D$pH▒ى▒▒▒▒▒▒▒▒▒▒I▒M▒1▒▒▒I▒E▒▒▒▒▒FA▒H▒▒A▒▒8▒▒▒▒~4▒4▒▒▒▒FA▒H▒▒A▒▒▒▒▒▒FA▒H▒▒A▒▒▒▒▒▒H▒T$pH▒▒▒▒▒▒▒c▒▒▒▒%▒):▒>▒▒▒A▒E▒2▒▒▒f▒▒C▒▒▒E▒▒u*▒L$x▒\$|▒▒▒▒▒▒FA▒H▒▒A▒▒▒▒▒▒FI▒▒H▒▒E1▒Ǆ$▒▒▒▒▒A▒▒x▒▒▒Ǆ$▒▒▒▒▒fE▒▒▒▒▒▒▒▒-▒T$`H▒L$`H▒T$a▒▒▒▒▒+▒▒%▒9▒p▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒SH▒▒ 1ۃ▒▒▒▒▒▒▒P9▒|▒▒▒▒H▒▒H▒▒ [▒f▒WVSH▒▒ H▒▒H▒▒A▒▒e▒1▒fD▒▒▒▒PA9▒▒▒▒\H▒V▒▒L▒@▒HL▒▒▒▒tD▒
+H▒▒H▒▒▒▒u▒H▒▒tH▒L▒▒H▒▒ [^_▒@1▒▒@▒H▒ȋI▒▒▒fn▒H▒H▒fn▒fb▒f▒@▒▒f▒AWAVAUATUWVSH▒▒81▒▒rI▒▒I▒▒9q▒▒▒▒H▒ZH▒i1▒Lc▒I▒▒J▒<I▒E▒▒HD▒▒▒▒D$,A▒▒A9▒r^A▒▒I▒▒I▒▒E1▒1▒f.▒A▒A▒I▒▒I▒▒I▒▒L▒I▒Ɖ▒H)▒I▒▒ H▒▒H)▒H▒▒A▒@▒H▒▒ ▒▒L9▒s▒E▒
+E▒▒▒▒L▒▒L▒▒▒▒&▒▒xKH▒▒1▒fD▒D▒H▒▒H▒▒L)▒H)▒H▒A▒H▒▒ ▒▒H9▒s▒Hc▒H▒D▒▒▒t.A▒E▒D$,D▒D$,H▒▒8[^_]A\A]A^A_▒▒▒▒u
+                   ▒▒H▒▒H9▒r▒A▒EA▒t$▒D$,▒▒▒E▒E▒▒u
+                                                 ▒▒I▒▒L9▒r▒A▒t$L▒▒L▒▒▒&▒▒▒I▒▒▒뒐▒AWAVAUATUWVSH▒▒▒▒$ A▒)L▒▒$0▒D$0I▒▒L▒▒L▒΋▒$(▒T$8▒D$@H▒▒$8H▒D$(▒▒▒▒A▒▒▒▒▒▒▒
+                                                                          ▒▒▒▒\$L▒}▒▒▒▒D▒)▒ 1▒A▒▒ ~D▒▒▒A9▒▒▒▒
+▒E▒L▒OA▒▒H▒▒H▒@Mc▒J▒▒H▒
+                       L▒YM9▒A▒▒H▒▒
+                                   ▒▒E▒▒▒▒H▒WI▒▒I)▒H▒▒I▒▒▒f.▒D▒
+H▒▒H▒▒D▒H▒H9▒s▒E▒▒J▒▒▒HD▒I▒▒H▒I▒▒▒@H▒▒E▒▒▒[D▒XD▒▒A▒▒E▒▒t▒Mc▒▒S▒▒B▒D▒▒▒)▒A▒▒H▒▒▒|R▒DH▒▒▒h▒▒▒▒▒C▒▒▒▒▒@I▒▒▒▒▒▒▒▒?1▒M!▒I▒▒M▒▒I▒▒I▒▒f▒▒o,lH▒▒L9▒u▒L▒▒H▒▒▒H▒▒L▒
+                                                                         H▒A▒▒▒▒▒▒A▒▒I▒AH9▒▒▒▒▒A▒A▒BI▒H9▒▒▒▒▒▒A▒▒▒▒▒▒▒▒▒▒H▒▒▒▒▒▒$▒▒L$8▒A)ƉL$`▒0▒▒▒DǄ$▒D▒L$X▒D$pE▒▒y▒▒D$X)T$pE▒▒▒7▒▒▒D▒▒D)\$p▒▒D▒\$|E1ۉ▒$▒▒D$0▒▒ ▒▒▒▒▒(A▒▒▒A▒▒▒▒▒$▒▒▒▒Q▒▒▒▒Ǆ$▒▒▒▒▒▒▒▒Q▒L$@▒D$|ȍH▒▒$▒▒▒ɉL$PO▒▒▒D▒▒$▒▒▒$▒▒K▒▒▒D▒▒$▒H▒D$hA▒D$
+                                                         ▒▒▒D$xt(▒L$x▒▒▒I▒▒▒D$x▒▒▒#▒)ȉD$x▒L$P▒▒$▒▒▒▒▒@ ▒▒▒▒D$|
+▒OfH~▒H▒▒H▒▒ ▒▒@H▒▒ H   ЋT$P▒▒▒SǄ$▒▒L$PL▒RfHnЍA▒H▒▒A▒$▒▒▒▒IHf(▒▒X▒▒X
+▒O▒,▒L▒T$h▒^▒I▒R▒\▒f▒▒▒*Ѓ▒0A▒▒\▒f/▒▒|▒%?O▒?O▒JD▒▒$▒▒▒▒▒$▒9▒▒▒▒Y▒f▒▒H▒▒▒Y▒▒,▒▒*Ѓ▒0▒B▒▒\▒f/▒▒ f(▒▒\▒f/▒v▒L▒D$h▒fDL9▒▒4▒A▒H▒▒H▒J▒<9t▒L▒D$h▒▒L▒ǈH▒T$h▒D$L ▒▒f▒A▒▒▒▒D$0A▒▒▒▒▒$▒f▒▒D▒\$@▒A*▒▒YTN▒,ȃ▒▒▒$▒▒     ▒▒▒D▒\$@H▒D$hA▒D$
+                                                         ▒▒▒D$x▒▒▒D$@Ǆ$▒Ǆ$▒▒▒▒▒▒D$P▒▒▒▒▒▒▒▒f▒f▒▒▒A*▒f.▒z▒g▒▒▒A▒▒▒^▒▒▒f▒▒▒▒D$0▒▒▒▒▒▒▒▒
+                                                     Ǆ$▒Ƅ$▒▒▒▒▒▒D$0▒▒▒▒▒fDǄ$▒A▒▒▒▒▒▒▒D$`▒D$@▒▒▒uǄ$▒Ǆ$▒▒▒▒▒▒D$P▒▒▒▒f▒▒D$|A9D$▒H▒PD▒L$@H▒H▒▒▒▒E▒▒▒▒D$P▒▒▒▒^▒Y(Mf/▒$▒▒G▒▒E1▒1퉼$▒H▒|$hH▒D$h▒1▒D$L L▒▒▒LH▒▒H▒▒▒?H▒▒▒7▒▒$▒H▒D$h▒A▒H▒\$(H▒▒tH▒▒D$L   ▒▒LfH~▒H▒▒H▒▒ ▒▒@H▒▒ H   ▒▒\zLfHn▒f/▒▒H
+sLf/▒▒▒▒D$x▒D▒T$`E▒▒▒▒▒▒▒D▒▒$▒E▒▒▒▒D▒T$`E)▒A▒T$A▒ED▒щ▒$▒D)▒9▒▒k▒L$0▒A▒▒▒▒▒fD▒▒D▒T$P)Ѓ▒▒▒▒▒E▒҉▒$▒▒▒t      D9▒▒▒L$pD$XD▒▒$▒▒A▒͉D$p▒D▒▒$▒D▒\$`▒^D▒\$`Ǆ$▒D▒▒$▒H▒▒E▒▒~%▒L$X▒▒~A9͉▒AN▒)D$p)▒▒▒$▒A)ŉL$X▒▒$▒▒▒t0▒▒$▒▒▒t    E▒▒▒▒▒$▒H▒▒D▒\$`▒D▒\$`H▒ùD▒\$`▒▒D▒\$`I▒▒E▒▒▒▒▒|$0▒▒▒D$XA)ċD$pA▒▒A▒▒D▒D▒▒$▒D▒▒▒~(▒▒H▒▒L▒L$`D▒\$8▒▒L▒L$`D▒\$8▒▒$▒H▒ËD$XЉ▒~L▒▒D▒\$8▒D▒\$8I▒▒▒▒$▒▒|$0A▒ƅ▒▒?▒D$P▒▒▒▒E▒▒▒▒▒D$P▒▒u}L▒▒E1▒▒▒
+H▒▒H▒▒H▒D$0▒JL▒L$0▒▒~T▒D$|H▒|$h▒▒▒▒$▒▒▒▒▒Ƅ$▒Ǆ$▒▒D$@▒▒▒Oȉ▒$▒▒ȉL$P▒L$@▒▒▒▒E1▒1▒D$@▒D$LH▒|$h▒؉▒$▒▒▒▒▒fDD▒▒$▒D▒l$p1▒▒▒▒▒@▒D$|D▒▒$▒▒▒▒▒$▒E▒▒▒▒C▒,▒▒~H▒▒L▒L$@D▒\$8▒gL▒L$@D▒\$8H▒▒I▒▒E▒▒▒L▒\$hL▒|$p▒I▒▒L▒L$8H▒t$`L▒▒▒f.▒H▒▒▒h▒E▒▒▒RD
+                                                             d$0u
+A▒▒AL▒gM▒▒▒~
+            ▒|$x▒A▒t$▒▒D$P9▒$▒▒H▒▒E1▒▒
+▒}E1▒▒
+H▒▒H▒▒L9▒▒&▒aL▒▒E1▒▒
+H▒▒▒NI▒ŋ▒$▒L▒▒▒H▒T$8H▒ى▒$▒▒▒▒▒▒H▒▒H▒▒A▒ƍp0▒iH▒L$8L▒▒A▒▒▒D▒XH▒▒E▒▒▒▒▒▒H▒▒H▒D$X▒<H▒L$X▒D$@▒n▒T$@▒D$0      ▒▒iA▒▒▒
+                               D$x▒▒▒▒▒A▒▒L▒L$8H▒t$`I▒▒L▒|$pA▒▒9▒]
+E▒▒▒▒
+H9▒H▒▒▒▒H▒|$hL▒d$h▒▒▒▒fD▒;H▒▒I▒▒▒▒▒▒▒D▒▒H▒▒▒5▒|$0I▒▒▒<E1▒A▒A▒▒H▒E▒d▒A▒▒▒?▒▒▒@L▒▒H▒▒D▒\$XL▒L$8▒3L▒L$8D▒\$X▒▒▒▒▒▒▒▒D$|E1▒H▒ٺ
+L▒L$P▒▒D▒\$8▒D$X▒L▒L$PH▒Ë▒$▒▒▒▒▒A!Ƌ▒$▒▒▒▒E▒▒▒▒▒D$|▒▒$▒▒▒$▒▒D$P▒L▒t$hD▒d$P▒L▒▒▒!@H▒▒E1▒▒
+▒8H▒Ë▒$▒▒▒H▒▒H▒ى▒$▒I▒▒▒▒▒▒▒D▒@0E▒F▒D9▒$▒|▒I▒▒1▒▒L$x▒▒▒▒C▒▒▒=▒▒▒▒▒C▒▒▒v▒▒▒▒▒▒▒▒▒D$LM▒▒I▒▒A▒>0t▒▒6▒▒▒fDA▒▒▒▒▒▒▒A▒D$▒▒9D$8▒▒▒▒▒▒D$pA▒▒D$X▒▒▒▒▒▒|$0▒▒▒▒▒▒T$P▒▒$▒▒B▒9▒▒;A▒▒A)▒▒Ѕ▒▒RǄ$▒D▒l$pA)▒▒▒▒▒f(▒H▒T$hf(▒E1▒▒Y▒▒#EA▒▒1f▒▒H▒▒▒*؃▒0▒B▒D▒▒$▒▒\▒A9▒t=▒Y▒A▒▒A▒▒▒,▒D▒▒$▒▒▒u▒▒0D▒▒$▒H▒▒A9▒u▒E▒▒uf(ȸ0▒▒Df(▒▒X▒f/▒▒▒▒▒▒▒\▒f/▒▒▒D▒l$`E▒▒▒ A▒l$▒▒▒▒D$x▒A▒▒$▒H▒|$hǄ$▒f(▒H▒W▒^▒▒,▒f▒▒▒*ɍA0▒▒D$|▒▒▒Yʉ▒$▒▒\▒f▒▒f.▒z▒▒▒%Df▒▒▒FfD▒Yă▒H▒▒▒▒$▒f(▒▒^▒▒,▒f▒▒▒*ɍA0▒B▒▒Y▒▒\▒f.▒z▒{▒▒$▒▒|$P9▒u▒▒D$x▒▒▒▒▒▒▒▒H▒|$h▒D$LH▒T$h▒▒▒▒▒T$@▒▒▒▒H▒T$h▒DI9▒▒▒M▒▒M▒v▒A▒D$▒<9t▒▒▒D$L A▒▒▒▒▒H▒|$hL▒d$h▒e▒▒▒▒▒$▒▒▒$▒E1▒)ʋL$PL$XAӋT$p▒▒$▒▒A▒ՉL$p▒V▒▒▒A▒▒▒▒▒▒▒A▒D$▒▒9D$8▒▒▒▒▒▒D$pA▒▒D$X▒▒▒▒f.▒H▒D$h▒▒$▒▒D$L ▒1▒
+H▒▒H▒▒H▒▒▒▒▒D▒▒$▒D▒▒$▒▒x
+
+H▒▒H▒D$`▒▒      D▒▒$▒D)▒$▒H▒\$`D▒▒$▒▒<▒▒▒▒▒▒H▒|$hH▒T$h▒g▒▒▒Ƅ$▒Ǆ$▒▒K▒▒▒Ǆ$▒▒;▒▒▒H▒ٺL▒L$0D▒D$8▒H▒T$0H▒▒H▒▒▒L▒L$0▒▒▒^▒▒▒uD▒D$8A▒▒▒M▒▒▒▒{▒D$L▒▒▒▒▒▒C▒▒▒▒▒Ǆ$▒▒▒▒▒D▒T$xA▒▒L▒L$8I▒▒H▒t$`L▒|$pE▒▒▒▒▒{▒▒▒|$x▒>H▒t$0E▒▒M▒▒L▒▒L▒|$8▒IE▒w▒E1▒L▒▒
+M▒▒▒    L9▒H▒ٺ
+HD▒E1▒H▒▒▒H▒▒I▒▒H▒▒H▒▒▒▒▒▒D▒p0L▒▒H▒▒M▒|$▒"▒▒▒M▒▒I▒▒M▒▒H▒t$0L▒|$8E▒▒A▒▒9▒p▒D$L H▒~@fH~▒H▒▒H▒▒ ▒▒@H▒▒ H$▒▒▒▒▒▒▒▒L▒L$8▒▒H▒UH▒HI▒▒HcEL▒▒u!▒L▒▒▒@L▒L$8I▒▒▒▒▒▒▒Ǆ$▒H▒|$hE1▒1▒▒▒▒▒A▒▒L▒L$8H▒t$`I▒▒L▒|$pA▒▒9▒|A▒▒▒D$L D▒H▒▒L▒▒▒(▒▒▒A▒▒H▒▒L▒L$8H▒t$`L▒|$pLH▒T$0H▒▒H▒▒▒L▒L$0D▒D$8▒▒L▒\$@▒A▒▒9▒(▒D$x E▒F1▒{▒▒H▒▒▒D$LL▒▒M▒c▒O▒▒▒Ǆ$▒▒▒▒▒▒D$P▒▒▒▒▒▒▒▒▒▒D$X▒D$|▒▒$▒▒D$P▒▒▒▒f▒▒1▒▒H▒|$hf.▒H▒T$h▒▒E▒▒▒▒D$L▒▒▒▒▒▒X▒▒B▒f/▒▒▒▒▒▒f.▒z
+                                                                               u▒▒▒▒▒▒▒▒D$LH▒|$hH▒▒H▒▒▒:0t▒H▒D$h▒▒▒▒▒D$xD▒▒$▒1▒D▒l$p▒▒▒▒▒E1▒H▒▒
+▒E▒▒L▒L$PH▒▒▒:▒▒▒▒D$|D▒\$8▒▒$▒▒▒$▒▒D$P▒▒▒▒▒L$pT$X▒▒$▒▒A▒͉D$p▒K▒▒▒f▒▒1▒▒H▒|$hf.▒▒▒E▒▒▒▒D$L▒J▒▒▒▒B▒L▒D$h▒▒▒▒▒▒▒$▒A▒B▒9▒▒u▒▒▒)D$pDT$XD▒▒$▒A▒▒A▒▒DЉD$p▒▒▒▒▒▒K▒▒▒▒▒▒▒▒▒▒▒▒▒H▒▒M▒cL▒▒▒▒▒▒L▒gH▒▒L▒▒A▒9H▒T$hM▒▒▒▒▒▒▒▒SH▒▒L▒▒▒t6▒D$LM▒c▒m▒▒▒u
+A▒▒▒▒▒▒▒▒D$x ▒▒▒▒▒H▒▒M▒cL▒▒묋D$xM▒c▒D$L▒7▒▒▒▒{▒D$L▒7▒▒▒1▒▒{▒▒▒▒▒D$L▒"▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒AUATUWVSHcyA▒▒I▒▒A▒▒D9▒A▒CA▒C[^_]A\A]▒@Mc▒H▒iH▒▒I▒▒H▒\=J▒t%▒▒tjD▒A▒ ▒▒L▒FA)▒A▒▒I9▒▒<I▒▒f▒A▒D▒▒I▒▒I▒▒▒▒▒▒D   ▒A▒B▒E▒H▒A▒▒I9▒r▒L)▒H▒D=▒DE▒▒tJH▒▒▒DDH9▒▒R▒▒▒L)▒H▒G▒H▒▒
+       ▒▒H▒▒▒▒▒▒H▒▒L)▒H▒w3▒H9▒r▒H▒▒H▒D▒H)▒H▒▒A▒C▒▒▒▒▒▒[^_]A\A]▒DI▒▒N▒D!1▒I▒▒I▒▒L▒▒H▒▒H▒▒▒AoADH▒▒H9▒u▒L▒▒H▒▒▒H▒▒H▒H▒A▒▒t▒▒▒
+H▒NH9▒▒y▒▒▒▒N▒JH▒H9▒▒f▒▒▒▒▒▒[▒▒▒DH▒▒▒H▒▒▒▒E▒KE▒▒▒^▒▒▒H▒▒▒▒▒▒▒ff.▒HcQH▒AH▒
+                                                                         ▒1▒H9▒r▒"H▒▒▒▒ H9▒sD▒E▒▒t▒H9▒s▒▒▒Ð▒▒▒▒▒WVSH▒▒ ▒▒p▒΃▒▒▒▒▒t<▒▒u*H▒tw▒▒▒ӋSp▒▒t▒▒▒▒H▒▒ [^_▒Y▒▒▒▒▒▒oH▒▒H▒ك▒(H▒H▒▒ [^_H▒%▒vH▒▒o▒▒tЋ▒o▒▒▒V▒▒▒▒r▒▒▒H▒▒o▒▒SH▒▒ ▒▒▒o▒▒t
+                                                                      H▒▒ [▒DH▒M-o▒▒▒H▒▒ [H▒▒ff.▒VSH▒▒8▒▒1▒▒▒▒▒▒▒▒      <H▒▒nHc▒H▒▒H▒▒tyL▒▒=/oL▒▒uRH▒D$(H▒
+   vH▒D$(▒9▒پ▒▒F▒H▒H▒
+                     ▒'H▒▒▒▒H▒▒▒KH▒▒t▒=▒n▒▒p
+                                            t▒H▒@H▒▒8[^▒▒▒پL▒be▒▒F▒H▒H▒
+                                                                       ▒'H▒▒#H▒▒H▒▒ [▒1▒▒▒▒▒HcH▒▒m▒=7nH▒▒DSH▒▒ H▒▒H▒▒t9▒y       ~
+                        ▒H▒▒H▒
+                              t
+)nH▒▒ [H▒%uff.▒f▒UWVSH▒▒(▒yH▒▒Ic▒Hc▒1▒f.▒▒D▒H▒▒H▒▒D▒H▒▒H▒▒H▒▒ 9▒▒H▒▒H▒▒t9{
+                                                                          ~%Hcǃ▒H▒▒▒H▒▒▒1▒▒▒▒▒HcH▒▒l▒=8mH▒▒▒H▒▒H▒▒t▒H▒HHcCH▒SL▒▒▒▒{     ~
+                          ▒H▒▒H▒
+▒l▒bsH▒D$(▒▒H▒P(H▒▒!▒AWAVAUATUWVSH▒▒(LcaHcjI▒▒I▒▒A9▒|▒▒I▒▒Ic▒I▒▒Lc▒A▒B▒\%A9_
+                                                                            }▒▒▒▒▒▒H▒▒H▒▒▒▒L▒XHc▒I▒4▒I9▒s#H▒▒L▒▒1▒H)▒H▒▒H▒▒L▒▒▒<I▒▒M▒MM▒wO▒$▒I▒,▒M9▒▒▒H▒▒L)▒I▒▒H▒▒H▒▒L9▒L▒,▒▒LB▒▒▒I▒▒M9▒sJE▒I▒▒E▒▒t▒L▒▒L▒▒E1▒f▒▒D▒9H▒▒H▒▒I▒▒L▒L▒I▒▒▒A▒I▒▒ H9▒r▒G▒+I▒▒M9▒r▒▒▒▒▒▒▒t
+                 ▒F▒H▒▒▒▒t▒▒_H▒▒H▒▒([^_]A\A]A^A_▒f▒ATUWVSH▒▒ ▒▒H▒ΉӃ▒▒▒▒H▒▒tcH▒=WaH▒▒▒LH▒▒L▒%dj▒f▒▒▒tAH▒7H▒▒tLH▒▒▒▒t▒H▒▒H▒▒▒A▒▒▒H▒▒H▒▒▒▒H▒▒t▒}   ~RH▒▒▒▒▒H▒▒u▒H▒▒j▒▒p▒f▒H▒▒H▒▒▒▒▒▒H▒H▒▒H▒▒▒H▒▒D▒▒H▒.4▒i1▒H▒Hc
+                                            ▒1Ґ▒D▒H▒▒H▒▒D▒H▒▒H▒▒H▒▒ 9▒▒H▒▒▒▒▒▒▒;n
+zi▒0p▒y▒▒▒▒▒H▒▒▒▒▒I▒▒H▒▒tTH▒HHcFH▒VL▒▒s▒~▒H▒    ▒▒H▒▒▒AL▒▒▒m▒▒▒▒(▒GH▒▒H▒▒▒▒H▒`_1▒▒^▒▒▒1▒▒2▒▒▒H▒=shH▒▒txH▒H▒dh▒=▒h▒▒H▒X4▒GqH▒=_H▒GH▒▒▒▒▒1▒▒▒▒▒▒HcH▒h▒=ahH▒
+                                                                         ▒H▒4▒H▒h▒▒nH▒▒3▒GqH▒=i^▒▒gH▒WH▒▒q▒▒▒AVAUATUWVSH▒▒ H▒͉֋A▒ԋ]▒▒▒E▒▒H▒
+▒▒▒A9▒▒▒!▒▒▒I▒▒H▒▒▒▒H▒x▒▒~H▒▒H▒▒1▒I▒▒H▒▒▒HcEH▒uL▒▒A▒▒▒▒L▒▒H▒UH)▒H▒▒I9▒r H▒▒
+                                                                           vH▒MH▒▒H)▒H▒▒▒fD▒L9▒r▒▒}     A▒]▒▒1▒▒e▒▒▒HcH▒▒f▒=▒fH▒
+                                                ▒H▒,▒H▒M▒▒L▒▒H▒▒ [^_]A\A]A^▒▒A▒ I▒▒1▒E)▒f.▒▒D▒▒I▒▒H▒▒▒▒D▒▒      ▒A▒A▒▒V▒▒▒L9▒r▒L▒▒H▒MH)▒H▒▒H▒▒I9ȹH▒▒HB▒▒▒AEމ▒} A=f▒▒Q▒▒▒f▒H▒▒H▒P1▒H▒▒H▒▒H▒▒▒oDH▒▒H9▒u▒H▒▒H▒▒▒H▒▒H▒Hǃ▒t▒▒▒H▒FL9▒s▒▒F▒GH▒L9▒▒p▒▒▒▒▒▒e▒▒▒@HcBD▒IA)▒u7L▒▒H▒▒J▒J▒T▒  @H9▒sH▒▒H▒▒D▒D9t▒E▒A▒▒D▒▒▒▒AUATUWVSH▒▒(HcB▒iH▒▒H@H9▒▒?H▒▒H▒▒▒290t▒▒{▒▒@▒H▒▒H▒▒1▒▒▒▒▒H▒▒H▒▒▒▒▒hHcGL▒OL▒f▒1▒I▒▒M▒▒HcCL▒D▒▒▒,
+                                                                          ▒H)▒H)ЉH▒▒H▒▒▒▒H▒▒ H▒
+               ▒▒L9▒r▒H▒C▒I9▒@▒▒I)▒M▒h▒I▒▒@▒▒J▒▒HD▒I▒M▒M▒▒H▒▒L9▒▒▒▒H▒▒I▒▒H)▒H▒▒A▒A▒▒▒H▒▒ ▒▒L9▒r▒I▒▒I)▒I▒▒▒K▒▒▒u▒P▒H▒▒A▒▒▒▒t▒D▒VH▒▒H▒▒([^_]A\A]▒D1▒▒I▒▒▒H▒5▒cH▒▒tMH▒H▒▒/H▒lc▒=▒c▒▒H▒▒H▒^▒FH▒▒([^_]A\A]▒@H▒▒H▒▒H▒▒▒▒▒▒f▒H▒5▒H▒"ZH▒▒H)▒H▒▒H▒▒H= vU▒)c▒j▒_▒▒▒1▒▒▒▒▒H▒F H▒\▒f.▒WVSHcAL▒QI▒▒D▒[▒H▒s▒A▒ˉϹ ▒▒A▒▒A)▒D▒▒▒
+▒?H▒▒ I9▒s1D▒K▒D▒▒A▒▒DD▒▒HA▒▒D▒▒▒fHn▒[^_▒D1҃▒    ▒▒▒H▒K▒
+▒?H▒▒ H ▒fHn▒[^_Ð▒                          uYD▒▒
+▒?H▒▒ H9▒fHn▒[^_ÐWVSH▒▒01▒fH~▒H▒▒L▒▒▒7▒▒▒H▒xaH▒▒▒▒H▒▒=▒aH▒^a▒(H▒▒H▒@I▒▒H▒▒ ▒▒▒▒▒▒▒▒A▒▒A▒▒▒▒▒AE▒A▒ȅ▒u81▒▒▒▒▒▒D▒Q ▒P▒▒PE▒▒t]C▒▒▒▒▒▒▒▒5D)҉H▒▒0[^_▒E1▒▒D▒▒D▒▒A▒▒E▒▒t▒jWH▒▒H)▒H▒▒H▒▒H▒▒ vK▒(▒▒▒▒D▒H▒PE▒▒u▒Hc▒A▒▒2▒L▒▒▒D▒▒▒)ʉH▒▒0[^_▒H▒!H▒
+|`▒ZgH▒D$(▒▒▒▒@H▒P(H▒▒▒ff.▒H▒▒H▒J▒▒▒▒t▒H▒▒H▒▒▒▒▒u▒Ð▒▒▒▒▒▒▒▒▒▒▒▒▒E1▒H▒▒H▒▒u▒H▒▒I▒▒I)▒I9▒s▒8u▒L▒▒Ð▒▒▒▒▒▒▒E1▒H▒▒H▒▒u▒I▒▒L9▒t
+                                         fB▒<Au▒L▒▒Ð▒▒▒▒▒▒▒▒▒▒H▒,H▒Ð▒▒▒▒H▒▒+H▒Ð▒▒▒▒H▒▒+H▒Ð▒▒▒▒SH▒▒ H▒▒1▒▒▒H9▒r▒▒▒H9▒vH▒K0H▒▒ [H▒%fD1▒▒H▒▒H▒▒H)▒H▒▒i▒▒▒▒▒▒H▒.
+▒K▒H▒▒ [▒f▒SH▒▒ H▒▒1▒▒qH9▒r▒▒bH9▒vH▒K0H▒▒ [H▒%▒eD▒c▒▒▒1▒▒:H)▒H▒▒i۫▒▒▒▒KH▒▒ [▒▒  H▒_▒▒H▒▒H▒_Ð▒▒▒▒SH▒▒ ▒▒▒T        ▒▒H▒IH▒▒H▒H▒▒ [ÐH▒▒XH▒▒f▒T$hD▒▒E▒▒uf▒▒▒wY▒▒H▒▒X▒f▒H▒T$LD▒L$(L▒D$hA▒H▒T$81▒▒D$LH▒D$0H▒D$ ▒4e▒▒▒T$L▒▒t▒▒▒*▒▒▒▒▒H▒▒X▒▒WVSH▒▒0H▒▒H▒▒H▒D$+▒▒HD▒▒▒▒▒▒A▒▒H▒▒A▒▒▒;▒▒▒H▒H▒▒0[^_ÐAVAUATUWVSH▒▒0E1▒I▒▒H▒▒L▒▒▒▒▒▒M▒,$▒▒M▒▒tHH▒▒tZH▒▒u ▒H▒H▒Iƀ{▒▒▒I▒▒I9▒suA▒UA▒▒A▒▒H▒▒▒▒▒▒▒▒▒▒I▒▒▒▒▒▒L▒▒H▒▒0[^_]A\A]A^▒DH▒l$+▒f▒HcЃ▒H▒Iր|+t>I▒▒A▒UA▒▒A▒▒H▒▒▒g▒▒▒▒▒▒룐M▒,$▒f.▒I▒$I▒▒▒f▒I▒▒냐▒▒▒▒▒▒▒▒▒AUATUWVSH▒▒HH▒▒H▒D$:H▒▒1▒H▒▒L▒▒f▒T$:L▒▒HD▒▒0A▒▒▒ H▒▒A▒▒H▒▒\HD▒H▒▒▒▒H▒▒▒▒▒▒▒D$<▒▒▒~A▒▒v`▒▒fD1▒f▒1▒H▒▒H[^_]A\A]▒@▒T$=A▒L▒D$<▒D$(H▒t$ ▒f.▒H▒t$ I▒▒D▒▒▒D$(A▒▒Hb▒▒u▒▒;▒*H▒▒▒▒▒▒▒▒▒H▒▒▒▒▒▒▒z▒▒▒AWAVAUATUWVSH▒▒HH▒▒[M▒▒M▒▒H▒▒H▒▒LD▒M▒▒▒A▒▒▒H▒▒▒▒H▒7H▒▒▒▒H▒▒▒▒1▒M▒▒▒▒L▒5▒a▒▒w]▒?▒▒▒▒p▒T$=A▒L▒D$<▒D$(D▒▒H▒l$ A▒օ▒▒.▒H▒7H▒H▒▒H▒H▒7L9▒s)A▒$▒A▒$▒D$<▒▒u▒1▒f▒ML9▒sH▒H▒▒H▒▒H[^_]A\A]A^A_▒f.▒1▒1▒f▒T$:▒▒tՃ▒▒L▒5▒`H▒-▒`▒Mf.▒H▒D$:▒T$=L▒D$<A▒▒D$(D▒▒H▒D$ ▒Յ▒tn▒H▒H▒▒H7▒o▒▒▒A▒$▒A▒$▒D$<▒▒▒T▒▒▒▒▒u▒D▒▒A▒օ▒▒▒H▒D$:I▒D▒▒▒D$(A▒H▒D$ ▒C`▒▒u▒▒6▒*▒▒▒▒D▒▒▒`▒▒uSE▒▒u▒f▒E▒▒▒▒▒D1▒▒▒▒▒▒▒H▒l$ I▒D▒▒▒D$(A▒▒▒_▒▒u▒▒fDL▒▒H)▒H▒▒▒▒H▒l$ I▒D▒▒▒D$(A▒▒▒_▒▒▒#▒▒▒▒L▒▒▒▒E▒▒uc▒f▒D$:▒▒▒▒▒▒▒E▒▒▒▒A▒$1▒▒&▒f▒EH▒H▒▒H▒▒H▒pH▒7I9▒▒▒▒▒T$<1▒A▒
+                      $▒▒u▒▒▒▒▒▒H▒D$:I▒D▒▒▒D$(A▒H▒D$ ▒▒^▒▒▒t▒▒▒▒▒▒▒f.▒H▒▒E▒▒t▒H▒▒H▒▒8A▒$u▒▒▒▒▒fDL▒5▒^▒G▒H▒l$ I▒D▒▒▒D$(A▒A▒օ▒▒4▒▒▒H▒H▒▒H▒▒H▒pH▒7I9▒t A▒$▒>A▒$▒D$<u▒▒▒▒▒fDL▒▒▒
+▒▒▒H▒--^L▒t$:▒f.▒H▒▒H▒▒H7▒▒▒▒▒A▒$▒>A▒$▒D$<▒▒▒▒▒L▒t$ I▒D▒▒▒D$(A▒▒Յ▒u▒▒▒▒▒▒A▒$▒▒▒▒WHD▒H▒▒▒▒H▒▒▒▒▒▒▒D$<▒▒t|A▒▒v^▒▒▒~▒▒▒:]▒▒tJH▒▒▒▒H▒D$:▒D$(A▒I▒▒H▒D$ ▒▒▒]▒▒▒▒▒H▒▒@[^_]A\Å▒uL▒H▒▒@[^_]A\▒@1▒H▒▒@[^_]A\▒H▒D$:▒T$=L▒D$<A▒▒D$(H▒D$ ▒DH▒D$:A▒I▒▒▒▒▒D$(H▒D$ ▒▒\▒▒u▒▒w▒*H▒▒▒▒▒▒▒v▒▒▒▒▒H▒▒▒▒▒▒▒e▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒%▒\▒▒▒▒%v[▒▒▒%f[▒▒▒%V[▒▒▒%F[▒▒▒%6[▒▒▒%&[▒▒▒%[▒▒▒%[▒▒▒%▒Z▒▒▒%▒Z▒▒▒%▒Z▒▒▒%▒Z▒▒▒%▒Z▒▒▒%▒Z▒▒▒▒}▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒0▒@▒▒▒▒▒▒▒▒
+`▒@▒▒▒▒▒▒▒▒▒▒▒▒@ÿ▒▒▒?▒▒@`▒@p▒@▒▒@▒@▒▒@`▒@p▒@▒▒@Hello, world!
+0@@▒▒@8@Argument domain error (DOMAIN)Argument singularity (SIGN)Overflow range error (OVERFLOW)Partial loss of significance (PLOSS)Total loss of significance (TLOSS)The result is too small to be represented (UNDERFLOW)Unknown error_matherr(): %s in %s(%g, %g)  (retval=%g)
+g▒▒▒f▒▒df▒▒▒f▒▒▒f▒▒
+                   g▒▒▒f▒▒Mingw-w64 runtime failure:
+Address %p has no image-section  VirtualQuery failed for %d bytes at address %p  VirtualProtect failed with code 0x%x  Unknown pseudo relocation protocol version %d.
+  Unknown pseudo relocation bit size %d.
+%d bit pseudo relocation at %p out of range, targeting %p, yielding the value %p.
+▒k▒▒▒k▒▒▒k▒▒▒k▒▒▒k▒▒@l▒▒▒k▒▒▒l▒▒@l▒▒▒▒(null)(null)▒▒▒▒P▒▒▒P▒▒▒▒▒▒▒P▒▒▒Ԥ▒▒P▒▒▒▒▒▒P▒▒▒P▒▒▒▒▒▒▒▒▒▒P▒▒▒Ȣ▒▒▒▒▒P▒▒▒▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒▒▒▒P▒▒▒
+▒▒▒P▒▒▒A▒▒▒r▒▒▒▒▒▒▒P▒▒▒▒▒▒▒P▒▒▒P▒▒▒▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒Ȟ▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒P▒▒▒▒▒▒▒P▒▒▒▒▒▒▒@▒▒▒}▒▒▒O▒▒▒!▒▒▒▒▒▒▒@▒▒▒(▒▒▒P▒▒▒g▒▒▒ܟ▒▒0▒▒▒Ȟ▒▒▒▒▒▒P▒▒▒P▒▒▒ɡ▒▒(▒▒▒Ȟ▒▒P▒▒▒P▒▒▒Ȟ▒▒P▒▒▒(▒▒▒▒▒INInfinityNaN0▒?aCoc▒▒▒?▒▒`▒(▒▒?▒y▒PD▒?▒}▒-▒<2ZGUD▒?▒?$@@@▒▒?}▒?$@Y@@▒@▒▒@j▒@▒▒.A▒cA▒חAe▒▒A _▒B▒vH7B▒▒mB@▒0▒B▒ļ▒B4&▒k
+              C▒▒7y▒AC▒؅W4vC▒Ngm▒▒C=▒`▒X▒C@▒▒x▒DP▒▒▒▒KD▒▒M▒▒▒D▒▒ؗ▒Ҝ<3▒▒▒#▒I9=▒▒D▒▒2▒▒▒▒[%Co▒d(▒
+▒▒7y▒ACn▒▒▒▒F▒▒?▒O8M20▒Hw▒Z<▒s▒Ou0▒@@▒@@▒@н@н@ ▒@@l▒@▒▒@▒▒@▒▒@▒▒@▒▒@▒▒@▒▒@▒▒@P▒@X▒@▒▒@@@@(@▒▒@`▒@▒▒@▒@▒@p▒@GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0GCC: (GNU) 13.2.0▒.▒0y
+         ▒▒▒▒▒▒(▒▒▒H▒▒h▒p▒ !t▒0▒x▒▒▒▒▒▒▒▒▒▒Z▒▒`▒▒▒▒▒▒▒/▒▒0▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒I▒▒P▒▒▒▒=▒@~▒▒▒ ▒▒M $▒P ▒ ,▒▒ A!8▒P!:#D▒@#l#T▒p#▒#X▒▒#]$\▒`$▒$h▒▒$%l▒ %▒%p▒▒%▒%t▒▒%i&x▒p&.'|▒p'▒'▒▒▒'▒(▒▒▒(N*▒▒P*B,▒▒P,▒1▒▒▒1▒5▒▒▒5w7▒▒▒7▒=▒▒▒=R?
+                                                           ▒`?TD▒`D▒F(▒▒F▒H8▒▒H^PD▒`P▒\X▒▒\]p▒ ]▒]x▒▒]▒]▒▒▒]N_▒▒P_dx▒▒px5z▒▒@zzz▒▒▒zY{▒▒`{▒{▒▒▒{▒|▒▒▒|}▒▒}▒}▒▒~▒~▒▒~▒
+     ▒ ▒M▒$▒P▒\▒4▒`▒▒▒H▒▒▒▒L▒ ▒/▒`▒0▒Ŋl▒Њ▒x▒▒(▒|▒0▒U▒▒▒`▒k▒▒▒p▒{▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒0`pP▒▒h▒B▒▒▒▒▒▒▒B▒▒▒▒▒▒B)▒▒▒0▒o▒▒▒p▒f▒▒▒p▒▒▒▒▒▒N▒▒▒P▒▒▒▒0▒5▒▒Bb
+                        5
+                         b2PBB0`B0`BB0` ▒x
+                                          h▒0`b0`▒0`p
+E▒
+  0
+   `
+p       ▒▒▒▒P▒2020`pB0`
+
+20`pP▒20`pR0`p▒20`p     ▒
+                         0
+                          `
+p       ▒▒▒▒
+5b
+  0
+   `
+p       ▒▒▒▒P
+%B
+  0
+   `
+p       ▒▒▒▒P5
+R0`pB0`pP▒0`
+
+20`p▒0`pP▒0`p
+
+             0`pP▒▒
+
+0
+ `
+p       ▒▒▒▒2020`p      b
+                         0
+                          `
+p       ▒▒▒▒
+
+0
+ `
+p       ▒▒0`pP▒▒20`p20b0`B0`pPR0        B
+                                         0
+                                          `
+p       ▒▒▒▒
+
+20`pP2
+0       pP▒▒▒
+
+             0`pP▒▒0`pR0`p202020▒R0`R
+0       pP▒▒▒
+
+             0`pP▒▒     ▒
+                         0
+                          `
+p       ▒▒▒▒
+
+r0`pP▒<▒h▒▒▒▒▒▒L▒l▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒:▒B▒P▒b▒r▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒&▒4▒>▒J▒T▒^▒j▒r▒|▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒&▒l▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒:▒B▒P▒b▒r▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒&▒4▒>▒J▒T▒^▒j▒r▒|▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒&▒
+                                     eleteCriticalSection?EnterCriticalSectionvGetLastError▒GetStartupInfoA|InitializeCriticalSection▒IsDBCSLeadByteEx▒LeaveCriticalSection
+           MultiByteToWideCharrSetUnhandledExceptionFilter▒Sleep▒TlsGetValue▒VirtualProtect▒VirtualQuery
+                        WideCharToMultiByte8__C_specific_handler@___lc_codepage_funcC___mb_cur_max_funcR__getmainargsS__initenvT__iob_funca__set_app_typec__setusermatherrr_acmdlny_amsg_exit▒_cexit▒_commode▒_errno▒_fmodeGNU C17 13.2.0 -mtune=generic -march=x86-64 -g -g -g -O2 -O3 -O2 -O2 -O3 -fbuilding-libgcc -fno-stack-protectorx▒\chalong long unsigned inlong long intshort unsigned intintlong intunsigned intlong unsigned inunsigned charlong doubldoublefloDt   short intix86_tuX86_TUNE_SCHEDULEX86_TUNE_PARTIAL_REG_DEPENDENCYX86_TUNE_SSE_PARTIAL_REG_DEPENDENCYX86_TUNE_SSE_PARTIAL_REG_FP_CONVERTS_DEPENDENCYX86_TUNE_SSE_PARTIAL_REG_CONVERTS_DEPENDENCYX86_TUNE_DEST_FALSE_DEP_FOR_GLCX86_TUNE_SSE_SPLIT_REGSX86_TUNE_PARTIAL_FLAG_REG_STALLX86_TUNE_MOVX86_TUNE_MEMORY_MISMATCH_STALL   X86_TUNE_FUSE_CMP_AND_BRANCH_32
+X86_TUNE_FUSE_CMP_AND_BRANCH_64
+                               X86_TUNE_FUSE_CMP_AND_BRANCH_SOFLAGS
+                                                                   X86_TUNE_FUSEX86_TUNE_ACCUMULATE_OUTGOING_ARGSX86_TUNE_PROLOGUE_USING_MOVEX86_TUNE_EPILOGUE_USING_MOVEX86_TUNE_USE_LEAVEX86_TUNE_PUSH_MEMORYX86_TUNE_SINGLE_PUSHX86_TUNE_DOUBLE_PUSHX86_TUNE_SINGLE_POPX86_TUNE_DOUBLE_POPX86_TUNE_PAD_SHORT_FUNCTIONX86_TUNE_PAD_RETURNSX86_TUNE_FOUR_JUMP_LIMITX86_TUNE_SOFTWARE_PREFETCHING_BENEFICIALX86_TUNE_LCP_STALL__int128 unsigned_Float16complex _Float1complex floatcomplex double complex long double_Float128 complex _Float128
+func_ptr*>/K
+            __CTOR_LIST__/@__DTOR_LIST__0@/▒
+                                            ▒K▒ s       ▒▒@_▒   s       p▒@
+
+
+
+                                                                        >!
+                                                                          !I:!;9!I:!;
+     9!I?<4G:!;9!
+I%
+
+
+        '
+:
+ ;
+  9
+   I
+    !
+     !I/
+▒-Hv▒▒▒▒▒▒▒x "gY0uKgg0=L""<▒
+            ▒,0'@2A▒A▒n▒▒../../../gcc-13.2.0/libgcc/config/i386/cygwin.S/home/gfortran/gcc-home/workshop/gcc/objdir64/x86_64-w64-mingw32/libgccGNU AS 2.39/home/gfortran/gcc-home/workshop/gcc/objdir64/x86_64-w64-mingw32/libgcc../../../gcc-13.2.0/libgcc/config/i386cygwin.S../../../gcc-13.2.0/libgcc/libgcc2.c/home/gfortran/gcc-home/workshop/gcc/objdir64/x86_64-w64-mingw32/libgcc/home/gfortran/gcc-home/workshop/gcc/objdir64/x86_64-w64-mingw32/libgcc../../../gcc-13.2.0/libgcc../../../gcc-13.2.0/libgcc/../gcc/config/i386libgcc2.ci386.hgbl-ctors.hlibgcc2.c.fileO▒▒gcrtexe.ca ▒ ▒▒▒#C |▒0 envp(argv0argc8▒▒`
+▒ Agq▒▒main]▒ o▒.l_endw▒y▒ .l_start▒.l_end▒atexit▒ .textH.data.bss<.xdatap
+.pdat▒.file`▒▒gcygming-crtbeg▒ ▒  .text.data.bss@.xdata.pdataT▒.files▒▒gLW8$.cprintf0 main▒ .text0{.data.bss@.xdatax.pdatal.rdata▒.file▒▒▒ggccmain.c▒▒ p.0▒▒ __main` @.text▒:   .dat.bss@.xdata▒ .pdata▒$       ▒       .file▒▒▒gnatstart.c.text▒.data.bssP
+           ▒0   .file▒▒▒gwildcard.c.text▒.data0.bss`▒P  .file▒▒▒gdllargv.c_setargv▒ .text▒.data0.bssp.xdata▒.pdata▒
+                                   ▒p   .file▒▒▒g_newmode.c.text.data0.bssp▒▒  .file▒▒▒gtlssup.c  /0 >__xd_a__xd_zU▒ .text▒.data0.bss▒.xdata▒.pdata▒$   .CRT$XLD.CRT$XL.rdata H.CRT$XD.CRT$XD.CRT$XL.CRT$XL.tls$ZZZ    .tls    ▒▒       .file▒▒▒gxncommod.c.text▒.data0.bss▒▒▒  .file▒▒▒gcinitexe.c.text▒.data0.bss▒.CRT$X.CRT$X▒▒gmerr.c_matherr▒ .text▒▒
+                          .data0.bss▒.rdata▒@.xdata▒.pdata▒
+                                                           ▒
+.file▒▒gCRT_fp10.c_fpreset fpreset .text.data0.bss▒.xdata▒.pdata▒
+                                                                 ▒0
+.file(▒▒gmingw_helpers..text.data0.bss▒▒P
+.fileC▒▒gpseudo-reloc.ca pP      ▒▒the_secs▒▒▒
+ ▒▒▒.text]'.data0.bss▒.rdata▒[.xdata▒0.pdata▒$  ▒p
+.fileU▒▒gusermatherr.c@ +▒9▒ .text@L.data0.bss.xdata
+                                                    .pdata▒▒
+.file_▒▒gxtxtmode.c.text▒.data0.bss▒▒▒
+.fileq▒▒gcrt_handler.cP▒ .text▒▒
+                                .data0.bss.xdata.rdata (
+.pdata,
+       ▒▒
+.file▒▒▒gtlsthrd.cgP ▒ ▒▒▒ ▒P .textP▒(.data0.bssH.xdata,(.pdata8$       ▒▒
+.file▒▒▒gtlsmcrt.c.text@.data0.bss`▒
+                                    .file▒▒▒g▒.text@.data@.bss`▒0
+                                                                 .file▒▒▒gpesect.c▒@ p ▒ 2` O▒ g  z▒ ▒▒ ▒p .text@▒      .data@.bssp.xdataT,.pdata\lP
+                                                                    .file▒▒▒gfake▒
+▒\.text02.data@.bssp▒x▒
+                       0▒H.file▒▒▒glibgcc2.c.textp.data@.bssp ▒(
+▒▒0                                                             ▒▒
+    ▒\H▒x%▒p
+            .file▒▒▒gmingw_matherr..textp.data@.bss▒▒▒
+                                                      .file▒▒▒gmingw_vfprintf&p .textpA.dataP.bss▒.xdata▒
+                         .pdata▒
+                                ▒▒
+                                  .file▒▒gmingw_pformat.7▒ fpi.0PE▒ XP lP ▒▒! ▒▒% ▒▒' ▒▒- ▒`/ ▒`4 ▒▒6▒8 `@ .text▒5Z.dataP.bss▒.xdata▒▒.pdata▒▒'.rdataP▒[▒▒
+                                                                          .file(▒▒gdmisc.c▒L  M ▒M ▒M .text▒Ln.datap.bss▒.xdatap0.pdatap0
+                                                         ▒▒
+                                                           .file<▒▒ggdtoa.c__gdtoaP.textPOO.datap.bss▒.rdata▒▒.xdata▒.pdata▒
+                                            ▒
+                                             .fileM▒▒ggmisc.cph @j .textph
+.datap.bss▒.xdata▒.pdata▒▒0
+                           .files▒▒gmisc.c▒j ▒
+
+                                              `k ▒k freelist▒
+▒p      ▒l
+                m       n $     ▒n /     p p5s▒p05.0▒>  Ps K    `u U    ▒u `    x j     0y t    ▒z .text▒jrq.data.bss▒▒ .xdata▒▒.pdata▒▒*.rdata▒X▒P
+                                                                   .file▒▒▒gstrnlen.cstrnlen{ .text{(.data▒.bss▒
+                                .xdata|.pdatal
+                                              ▒p
+                                                .file▒▒▒gwcsnlen.cwcsnlen0{ .text0{%.data▒.bss▒
+               .xdata▒.pdatax
+                             ▒▒
+                               .file▒▒▒g__p__fmode.c▒   `{ ▒    .text`{
+                                                                       .data.bss▒
+ .xdata▒.pdata▒
+               ▒▒
+                 .file▒▒▒g__p__commode.c▒       p{ ▒    .textp{
+                                                               .data.bss▒
+                                                                         .xdata▒.pdata▒
+       ▒▒
+         .file▒▒▒g__p__acmdln.c▒        ▒{ ▒    .text▒{
+                                                       .data.bss▒
+                                                                 .xdata▒.pdata▒
+                                                                               ▒▒
+ .file▒▒▒gmingw_lock.c▒ ▒{
+| .text▒{▒
+.data▒.bss▒
+.file▒▒▒g▒ .xdata▒.pdata▒▒
+
+`| handler▒
+           7
+`| V
+p| z
+p| .text`|ata▒.bss▒
+.file▒▒▒gacrt_iob_func.▒.pdata▒▒0
+▒| .text▒|.data.bss▒
+                    .xdata.pdata▒
+.file▒▒gwcrtomb.c▒               ▒P
+▒| wcrtomb0} ▒
+p} .text▒|▒.data▒.bss▒
+.file▒▒gmbrtowc.cmbrtowcp~ ▒▒(.pdata▒$  ▒p
+▒
+ ▒
+▒ ▒
+▒
+ mbrlenP▒
+
+          ▒
+           .textp~D.data▒.bss▒
+
+.text▒▒.data▒.bss▒            .xdata▒<.pdat$    ▒▒
+                  .idata$7x.idata$5L.idata$4▒.idata$6▒.textȅ.data▒.bss▒
+                                                                       .idata$7|.idata$5T.idata$4▒.idata$6▒.textЅ.data▒.bss▒
+                                            .idata$7▒.idata$5\.idata$4▒.idata$6▒.text؅.data▒.bss▒
+                .idata$7▒.idata$5d.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                                                      .idata$7▒.idata$5l.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                            .idata$7▒.idata$5t.idata$4▒.idata$6▒.text▒.data▒.bss▒
+                 .idata$7▒.idata$5|.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                                                       .idata$7▒.idata$5▒.idata$4▒.idata$.text▒▒.data▒.bss▒
+                                           .idata$7▒.idata$5▒.idata$4▒.idata$6.text▒▒.data▒.bss▒
+                .idata$7▒.idata$5▒.idata$4▒.idata$6&.text▒.data▒.bss▒
+                                                                     .idata$7▒.idata$5▒.idata$4.idata$64.tex▒.data▒.bss▒
+                                        .idata$7▒.idata$5▒.idata$4
+                                                                  .idata$6>.te▒.data▒.bss▒
+          .idata$7▒.idata$5▒.idata$4.idata$6J.text▒.data▒.bss▒
+                                                              .idata$7▒.idata$5▒.idata$4.idata$6T.text▒.data▒.bss▒
+                                  .idata$7▒.idata$5▒.idata$4$.idata$6^.text▒.data▒.bss▒
+       .idata$7▒.idata$5▒.idata$4,.idata$6j.text ▒.data▒.bss▒
+                                                             .idata$7▒.idata$5▒.idata$44.idata$6r.text(▒.data▒.bss▒
+                                   .idata$7▒.idata$5▒.idata$4<.idata$6|.text0▒.data▒.bss▒
+         .idata$7▒.idata$5▒.idata$4D.idata$6▒.text8▒.data▒.bss▒
+                                                               .idata$7▒.idata$5▒.idata$4L.idata$6▒.text@▒.data▒.bss▒
+                                     .idata$7▒.idata$5▒.idata$4T.idata$6▒.textH▒.data▒.bss▒
+           .idata$7▒.idata$5▒.idata$4\.idata$6▒.textP▒.data▒.bss▒
+                                                                 .idata$7▒.idata$5▒.idata$4d.idata$6▒.textX▒.data▒.bss▒
+                                       .idata$7▒.idata$5.idata$4l.idata$6▒.text`▒.data▒.bss▒
+            .idata$7▒.idata$5
+                             .idata$4t.idata$6▒.texth▒.data▒.bss▒
+                                                                 .idata$7▒.idata$5.idata$4|.idata$6▒.textp▒.data▒.bss▒
+                                      .idata$7▒.idata$5.idata$4▒.idata$6▒.textx▒.data▒.bss▒
+           .idata$7▒.idata$5$.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                                                 .idata$7▒.idata$5,.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                       .idata$7▒.idata$54.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+             .idata$7▒.idata$5<.idata$4▒.idata$6▒.text▒▒.data▒.bss▒
+                                                                   .idata$7▒.idata$5D.idata$4▒.idata$6.text▒▒.data▒.bss▒
+                                        .idata$7▒.idata$5L.idata$4▒.idata$6.text▒▒.data▒.bss▒
+             .idata$7▒.idata$5T.idata$4▒.idata$6.text▒▒.data▒.bss▒
+                                                                  .idata$7.idata$5\.idata$4▒.idata$6&.file(▒▒gfakehname▒fthunkL.text▒▒.data▒.bss▒
+                                                                 .idata$2.idata$4▒.idata$5L.file▒▒▒gfake.text▒▒.data▒.bss▒
+                                          .idata$4.idata$5.idata$7
+                                                                  .text▒▒.data▒.bss▒
+    .idata$7d.idata$5<.idata$4▒.idata$6r.textȆ.data▒.bss▒
+                                                         .idata$7`.idata$54.idata$4▒.idata$6b.textІ.data▒.bss▒
+                              .idata$7\.idata$5,.idata$4▒.idata$6P.text؆.data▒.bss▒
+   .idata$7X.idata$5$.idata$4▒.idata$6B.text▒▒.data▒.bss▒
+                                                         .idata$7T.idata$5.idata$4▒.idata$6:.text▒.data▒.bss▒
+                             .idata$7P.idata$5.idata$4|.idata$6.text▒▒.data▒.bss▒
+ .idata$7L.idata$5
+                  .idata$4t.idata$6.text▒▒.data▒.bss▒
+                                                     .idata$7H.idata$5.idata$4l.idata$6▒.text▒.data▒.bss▒
+                         .idata$7D.idata$5▒.idata$4d.idata$6▒.tex▒.data▒.bss▒
+                                                                             .idata$7@.idata$5▒.idata$4\.idata$6▒.text▒.data▒.bss▒
+                                                  .idata$7<.idata$5▒.idata$4T.idata$6▒.text▒.data▒.bss▒
+                       .idata$78.idata$5▒.idata$4L.idata$6▒.text ▒.data▒.bss▒
+                                                                             .idata$74.idata$5▒.idata$4D.idata$6▒.text(▒.data▒.bss▒
+                                                   .idata$70.idata$5▒.idata$4<.idata$6l.file▒▒▒gfakehname<fthunk▒.text0▒.data▒.bss▒
+                                                   .idata$2.idata$4<.idata$5▒.file▒▒▒gfake.text0▒.data▒.bss▒
+.file▒▒▒gcygming-crtend     .idata$4.idata$5.idata$7h
+                       0▒ .text0▒.data▒.bss▒
+                                            ,
+                                             0▒:
+                                                I
+                                                 ,
+                                                  X
+__xc_e                                             H▒▒
+▒     ▒
+ ▒▒
+   ▒▒
+     h▒
+       ▒
+        X▒▒
+           ▒▒
+             \
+              ▒
+               ▒#
+                 ▒?
+                   [
+                    ▒strerror▒▒ }
+                                 ▒_lock▒ ▒
+                                          ▒▒
+                                                ▒
+                                                 ▒__xl_a▒
+                                                         ▒▒
+_cexit▒ wcslen▒▒ ▒                                         ▒
+▒)▒:J▒WPo       memcpyx▒ ▒▒ ▒▒mallocp▒ ▒▒_CRT_MT0▒؆
+fprintfH▒ ▒▒<Sleep▒▒▒_commode▒▒▒ ▒▒__dll__▒▒▒▒▒▒ ▒▒@▒/▒▒E$calloc8▒ ]@g,tl▒▒▒$▒▒
+                                @▒"d6P▒
+                                       __xi_z\`k ▒▒▒▒▒▒▒▒signal▒▒ ▒strncmp▒▒ !@▒00P4]▒~▒▒▒<▒D▒▒▒▒▒▒
+                  ▒▒▒>؅ ▒fȅ z▒memset▒▒ ▒T▒▒▒▒▒▒▒l▒▒▒▒__xl_z__end__▒▒*X▒__xi_8`N▒▒b▒ q}▒▒▒▒__xc_▒▒▒▒▒▒▒▒▒_fmode▒▒▒▒ ▒$▒▒ "3R▒e▒▒y,fputcP▒ __xl_c▒ ▒4▒▒▒▒▒`▒t▒h▒  (@_newmodep?▒ fwrite`▒ ILWf▒|▒▒▒▒▒▒p▒0▒P▒
+_unlock(▒ [jvfprintf▒▒ freeX▒ z▒▒.debug_aranges.debug_info.debug_abbrev.debug_line.debug_frame.debug_str.debug_line_str__mingw_invalidParameterHandlerpre_c_init.rdata$.refptr.__mingw_initltsdrot_force.rdata$.refptr.__mingw_initltsdyn_force.rdata$.refptr.__mingw_initltssuo_force.rdata$.refptr.__image_base__.rdata$.refptr.__mingw_app_typemanagedapp.rdata$.refptr._fmode.rdata$.refptr._commode.rdata$.refptr._MINGW_INSTALL_DEBUG_MATHERR.rdata$.refptr._matherrpre_cpp_init.rdata$.refptr._newmodestartinfo.rdata$.refptr._dowildcard__tmainCRTStartup.rdata$.refptr.__native_startup_lock.rdata$.refptr.__native_startup_statehas_cctor.rdata$.refptr.__dyn_tls_init_callback.rdata$.refptr._gnu_exception_handler.rdata$.refptr.__mingw_oldexcpt_handler.rdata$.refptr.__imp___initenv.rdata$.refptr.__xc_z.rdata$.refptr.__xc_a.rdata$.refptr.__xi_z.rdata$.refptr.__xi_aWinMainCRTStartup.l_startwmainCRTStartup.CRT$XCAA.CRT$XIAA.rdata$zzz__gcc_register_frame__gcc_deregister_frame__do_global_dtors__do_global_ctors.rdata$.refptr.__CTOR_LIST__initialized__dyn_tls_dtor__dyn_tls_init.rdata$.refptr._CRT_MT__tlregdtor__report_errormark_section_writablemaxSections_pei386_runtime_relocatorwas_init.0.rdata$.refptr.__RUNTIME_PSEUDO_RELOC_LIST_END__.rdata$.refptr.__RUNTIME_PSEUDO_RELOC_LIST____mingw_raise_matherrstUserMathErr__mingw_setusermatherr_gnu_exception_handler___w64_mingwthr_add_key_dtor__mingwthr_cs_init__mingwthr_cskey_dtor_list___w64_mingwthr_remove_key_dtor__mingw_TLScallbackpseudo-reloc-list.c_ValidateImageBase_FindPESection_FindPESectionByName__mingw_GetSectionForAddress__mingw_GetSectionCount_FindPESectionExec_GetPEImageBase_IsNonwritableInCurrentImage__mingw_enum_import_library_names.debug_info.debug_abbrev.debug_line.debug_line_str.debug_aranges.debug_str.debug_frame__mingw_vfprintf__pformat_cvt__pformat_putchars__pformat_wputchars__pformat_xint.isra.0__pformat_int.isra.0__pformat_emit_radix_point__pformat_emit_float__pformat_float__pformat_emit_efloat__pformat_efloat__pformat_gfloat__pformat_emit_xfloat.isra.0__mingw_pformat__rv_alloc_D2A__nrv_alloc_D2A__freedtoa__quorem_D2A.rdata$.refptr.__tens_D2A__rshift_D2A__trailz_D2Adtoa_lockdtoa_CS_initdtoa_CritSecdtoa_lock_cleanup__Balloc_D2Aprivate_mempmem_next__Bfree_D2A__multadd_D2A__i2b_D2A__mult_D2A__pow5mult_D2A__lshift_D2A__cmp_D2A__diff_D2A__b2d_D2A__d2b_D2A__strcp_D2A__p__fmode.rdata$.refptr.__imp__fmode__p__commode.rdata$.refptr.__imp__commode__p__acmdln.rdata$.refptr.__imp__acmdln_lock_file_unlock_filemingw_get_invalid_parameter_handler_get_invalid_parameter_handlermingw_set_invalid_parameter_handler_set_invalid_parameter_handlerinvalid_parameter_handler.c__acrt_iob_func__wcrtomb_cpwcsrtombsinternal_mbstate.2mbsrtowcsinternal_mbstate.1s_mbstate.0register_frame_ctor.text.startup.xdata.startup.pdata.startup.ctors.65535___RUNTIME_PSEUDO_RELOC_LIST____imp_GetStartupInfoA__imp_abort__lib64_libkernel32_a_iname__data_start_____DTOR_LIST____imp__fmode__imp____mb_cur_max_func__imp__lockIsDBCSLeadByteExSetUnhandledExceptionFilter_head_lib64_libmsvcrt_def_a.refptr.__mingw_initltsdrot_force__imp_calloc__imp___p__fmode___tls_start__.refptr.__native_startup_stateGetLastError__rt_psrelocs_start__dll_characteristics____size_of_stack_commit____mingw_module_is_dll__iob_func__imp__acmdln__size_of_stack_reserve____major_subsystem_version_____crt_xl_start____imp_DeleteCriticalSection__imp__set_invalid_parameter_handler.refptr.__CTOR_LIST____imp_fputcVirtualQuery___crt_xi_start__.refptr.__imp__fmode__imp__amsg_exit___crt_xi_end____imp__errno.refptr.__imp___initenv_tls_start__mingw_winmain_lpCmdLine.refptr._matherr.refptr.__RUNTIME_PSEUDO_RELOC_LIST____mingw_oldexcpt_handler__imp__unlock_fileTlsGetValue__bss_start____imp_MultiByteToWideChar__imp___C_specific_handler___RUNTIME_PSEUDO_RELOC_LIST_END____size_of_heap_commit____imp_GetLastError.refptr._dowildcard__mingw_initltsdrot_force__imp_free___mb_cur_max_func.refptr.__mingw_app_type__mingw_initltssuo_force__tens_D2AVirtualProtect___crt_xp_start____imp_LeaveCriticalSection__C_specific_handler.refptr.__mingw_oldexcpt_handler.refptr.__RUNTIME_PSEUDO_RELOC_LIST_END_____crt_xp_end____minor_os_version__EnterCriticalSection_MINGW_INSTALL_DEBUG_MATHERR.refptr.__xi_a.refptr._CRT_MT__section_alignment____native_dllmain_reason_tls_used__imp_memset__IAT_end____imp__lock_file__imp_memcpy__RUNTIME_PSEUDO_RELOC_LIST____lib64_libmsvcrt_def_a_iname__imp_strerror.refptr._newmode__data_end____imp_fwrite__CTOR_LIST____imp___getmainargs_head_lib64_libkernel32_a__bss_end____tinytens_D2A__native_vcclrit_reason___crt_xc_end__.refptr.__mingw_initltssuo_force.refptr.__native_startup_lock__imp_EnterCriticalSection_tls_index__native_startup_state___crt_xc_start_____CTOR_LIST__.refptr.__dyn_tls_init_callback__imp_signal.refptr.__mingw_initltsdyn_force__rt_psrelocs_size__imp_WideCharToMultiByte__imp_strlen__bigtens_D2A__imp_malloc__mingw_winmain_nShowCmd.refptr._gnu_exception_handler__file_alignment____imp_InitializeCriticalSection__getmainargsInitializeCriticalSection___lc_codepage_func__imp_exit__imp_vfprintf__major_os_version____mingw_pcinit__imp_IsDBCSLeadByteEx__imp___initenv__IAT_start____imp__cexit__imp_SetUnhandledExceptionFilter__imp__onexit__DTOR_LIST__.refptr.__imp__acmdlnWideCharToMultiByte__set_app_type__imp_Sleep__imp___p__acmdlnLeaveCriticalSection__imp___setusermatherr__size_of_heap_reserve_____crt_xt_start____subsystem___amsg_exit__imp_TlsGetValue__setusermatherr.refptr._commode__imp_fprintf__mingw_pcppinit__imp___p__commodeMultiByteToWideChar__imp_VirtualProtect___tls_end____imp_VirtualQuery__imp__initterm__mingw_initltsdyn_force_dowildcard__imp___iob_func__imp_localeconvlocaleconv__dyn_tls_init_callback.refptr.__image_base___initterm__imp_strncmp.refptr._fmode__imp___acrt_iob_func__major_image_version____loader_flags__.refptr.__tens_D2A.refptr.__imp__commode___chkstk_ms__native_startup_lock__mingw_winmain_hInstanceGetStartupInfoA__imp_wcslen__imp____lc_codepage_func__rt_psrelocs_end__imp__get_invalid_parameter_handler__minor_subsystem_version____minor_image_version____imp__unlock__imp___set_app_type.refptr.__xc_a.refptr.__xi_z.refptr._MINGW_INSTALL_DEBUG_MATHERR__imp__commodeDeleteCriticalSection__RUNTIME_PSEUDO_RELOC_LIST_END__.refptr.__xc_z___crt_xt_end____mingw_app_type

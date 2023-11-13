@@ -119,7 +119,8 @@ int main(){
         k = k + 1;
     }
 }
-
+```
+```txt
 C:\projects_c++\helloworld> gcc -std=c99 -Wall -pedantic 1.c && C:\projects_c++\helloworld\1.exe
 iteration: 1
 i = 14; j = -12; l = -11.

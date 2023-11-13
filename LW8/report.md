@@ -56,6 +56,18 @@ LW8$.c:5:30: error: expected ';' before '}' token
       |                              ;
     6 | }
       | ~
+
+C:\projects_c++\helloworld> gcc -std=c99 -Wall -pedantic LW8$.c && C:\projects_c++\helloworld\a.exe
+Hello, world!
+
+C:\projects_c++\helloworld> gcc -std=c99 -Wall -pedantic LW8$.c && C:\projects_c++\helloworld\a.exe
+LW8$.c: In function 'main':
+LW8$.c:5:30: error: expected ';' before '}' token
+    5 |     printf("Hello, world!\n")
+      |                              ^
+      |                              ;
+    6 | }
+      | ~
 ```
 Результат компиляции я записал только для правильного случая. Если ошибиться, то будет выдано лишь то, что написано в протоколе.
 7. Выводы: эта лабораторная работа сделана. Я узнал, где можно детально изучить каждый этап выполнения программы, а также начал изучение языка С.

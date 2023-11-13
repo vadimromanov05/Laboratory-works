@@ -119,5 +119,40 @@ int main(){
         k = k + 1;
     }
 }
+
+C:\projects_c++\helloworld> gcc -std=c99 -Wall -pedantic 1.c && C:\projects_c++\helloworld\1.exe
+iteration: 1
+i = 14; j = -12; l = -11.
+Coordinats are not in ellipse.
+iteration: 2
+i = 14; j = 26; l = -11.
+Coordinats are not in ellipse.
+iteration: 3
+i = 7; j = 12; l = 14.
+Coordinats are not in ellipse.
+iteration: 4
+i = 22; j = -5; l = 7.
+Coordinats are not in ellipse.
+iteration: 5
+i = 9; j = 27; l = 7.
+Coordinats are not in ellipse.
+iteration: 6
+i = 9; j = 18; l = 9.
+Coordinats are not in ellipse.
+iteration: 7
+i = 19; j = 9; l = 9.
+Coordinats are not in ellipse.
+iteration: 8
+i = 29; j = -10; l = 9.
+Coordinats are not in ellipse.
+iteration: 9
+i = 30; j = 39; l = 9.
+Coordinats are not in ellipse.
+iteration: 10
+i = 10; j = 9; l = 30.
+Coordinats are not in ellipse.
+iteration: 11
+i = 11; j = 1; l = 9.
+Coordinats are in ellipse.
 ```
 8. Выводы: что-то мне расхотелось учить дальше язык C. Мне и азов плюсов с головой хватило. Я понял, что такое ад для программистов и понял, что пора эту жесть нормально изучать. Точка.

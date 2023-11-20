@@ -15,9 +15,91 @@
 2. Цель работы: составить программу на Си, выполняющую анализ и обработку вводимого текста в соответствии с заданием.
 3. Задание: Выделить предпоследнее шестнадцатеричное число в строке
 4. Идея, метод, алгориитм решения задачи:
-
+   - понять презентацию;
+   - понять программу с лабы;
+   - попытаться перегнать ту программу под свои реалии;
+   - перегнать ту программу под свои реалии.
 5. Сценарий выполнения работы:
-
+    - ещё раз вспомнить ту боль, что я пережил на ЛР 8;
+    - с помощью молитв и Интернета разобрать пример на запчасти и перебрать его;
+    - повоевать с выводом данных в языке Си;
+    - ещё малость помучиться с конечными автоматами;
+    - привести программу в божеский вид;
+    - вспомнить, что надо ещё делать Latex;
+    - забить на пункт 6 и лечь спать.
 6. Протокол:
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-8. Выводы:
+
+char isSpace(char ch)
+{
+	return (ch == ' ' || ch == ',' || ch == '\t' || ch == '\n');
+}
+
+
+typedef enum _kState
+{
+    FIND_LAMBDA,
+    FIND_DIGIT,
+} kState;
+
+
+int main()
+{
+    int i;
+    char current_number[10], digit, latest_number[10];
+    kState state = FIND_DIGIT;
+    while ((digit = getchar()) != EOF)
+    {
+        switch (state)
+        {
+            case FIND_DIGIT:
+            {
+                if (isSpace(digit))
+                {
+                    state = FIND_LAMBDA;
+                    /*printf("current_number, %s\n", current_number);
+                    printf("%s\n", latest_number);*/
+                }
+                i = 0;
+                while (current_number[i] != NULL)
+                {
+                    i += 1;
+                }
+                if (!isSpace(digit))
+                    {current_number[i] = digit;}
+                /*printf("digit: %c\n", digit);*/
+            }
+            break;
+            case FIND_LAMBDA:
+            {
+                if (!isSpace(digit))
+                {
+                    state = FIND_DIGIT;
+                }
+                for (i = 1; i < 10; i++)
+                    {
+                        latest_number[i] = NULL;
+                    }
+                i = 0;
+                while (current_number[i] != NULL)
+                    {
+                        latest_number[i] = current_number[i];
+                        i += 1;
+                    }
+                for (i = 1; i < 10; i++)
+                    {
+                        current_number[i] = NULL;
+                    }
+                current_number[0] = digit;
+            }
+            break;
+        }
+    }
+    printf("answer: %s", latest_number);
+}
+```
+8. Выводы: это было тяжело. Просто тяжело. Не было таких проблем при изучении Питона. Не надо мне было понимать, что stdin в Си работает как фотон: он и строка, и символ одновременно. И нельзя в Си безнаказанно выводить строки, он очень на это ругается, но я его присмирил. На этих кровавых знаниях лаба №11 завершена (очень на это надеюсь, по крайней мере).

@@ -27,7 +27,7 @@
 #!/bin/bash
 cd /d/D
 read -p "Введите название каталога: "  catalog
-if [ -s $(find . -type d -name "$catalog") ]; then echo "Вы ввели какую-то фигню, дальше работаем с диском D"; catalog="D"; fi
+if [ -s $catalog ]; then echo "Вы ввели какую-то фигню, дальше работаем с диском D"; catalog="D"; else while [ -s $(find . -type d -name "$catalog") ]; do echo "Эмм... Вы ввели что-то не то, попробуйте ещё раз"; read catalog; done; fi
 for arg in $(find /d/D -name "$catalog"); do echo -e "$(find $(find /d/D -name "$catalog") -name 'Makefile')" | tr '/' '\\'; echo -e "$(find $(find /d/D -name "$catalog") -not -name 'Makefile')"; done
 ```
 8. Выводы: обход получился не совсем рекурсивный. Кажется, мне удалось сломать систему и сделать скрипт через один цикл. Он прекрасно работает и его ничто не остановит (кроме моей тупости, разве что). Как говорил Конфуций: "Если код работает, то ничего в нём не трогай". Но я не такой умный, как он.

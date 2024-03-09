@@ -9,8 +9,14 @@ then
 else 
     while [ -s $(find . -type d -name "$catalog") ];
     do 
-        echo "Эмм... Вы ввели что-то не то, попробуйте ещё раз";
-        read catalog;
+        if [ -s $catalog ];
+        then
+            echo "Вы ввели какую-то фигню, дальше работаем с диском D";
+            catalog="D";
+        else 
+            echo "Эмм... Вы ввели что-то не то, попробуйте ещё раз";
+            read catalog;
+        fi;
     done;
 fi
 

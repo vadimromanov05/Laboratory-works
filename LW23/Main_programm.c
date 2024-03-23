@@ -15,18 +15,6 @@ Node* createNode(float data) {
     return newNode;
 }
 
-void printTree(Node* root, int level) {
-    if (root == NULL) {
-        return;
-    }
-    for (int i = 0; i < level; i++) {
-        printf("  ");
-    }
-    printf("%f\n", root->data);
-    printTree(root->firstChild, level + 1);
-    printTree(root->nextSibling, level);
-}
-
 void addChild(Node* parent, float data) {
     Node* newChild = createNode(data);
     if (parent->firstChild == NULL) {
@@ -40,13 +28,16 @@ void addChild(Node* parent, float data) {
     }
 }
 
-void deleteNode(Node* root) {
-    if (root == NULL){
+void printTree(Node* root, int level) {
+    if (root == NULL) {
         return;
     }
-    deleteNode(root->firstChild);
-    deleteNode(root->nextSibling);
-    free(root);
+    for (int i = 0; i < level; i++) {
+        printf("  ");
+    }
+    printf("%f\n", root->data);
+    printTree(root->firstChild, level + 1);
+    printTree(root->nextSibling, level);
 }
 
 void findWidth(Node* root, int level, int* width) {
@@ -58,23 +49,32 @@ void findWidth(Node* root, int level, int* width) {
     findWidth(root->nextSibling, level, width);
 }
 
+void deleteNode(Node* root) {
+    if (root == NULL){
+        return;
+    }
+    deleteNode(root->firstChild);
+    deleteNode(root->nextSibling);
+    free(root);
+}
+
 int main() {
     Node* root = createNode(1.0);
     addChild(root, 2.0);
     addChild(root, 3.0);
     addChild(root->firstChild, 4.0);
-    addChild(root->firstChild->nextSibling, 5.0);
+    /*addChild(root->firstChild->nextSibling, 5.0);*/
 
-    printf("Дерево:\n");
+    printf("Tree:\n");
     printTree(root, 0);
 
     int width[100] = {0};
     findWidth(root, 0, width);
 
-    printf("Ширина дерева:\n");
+    printf("Tree's width:\n");
     for (int i = 0; i < 100; i++) {
         if (width[i] > 0) {
-            printf("Уровень %d: %d узлов\n", i, width[i]);
+            printf("Level %d: %d nodes\n", i, width[i]);
         }
     }
 

@@ -89,16 +89,16 @@ int main() {
     addChild(root, 3.0);
     addChild(root->firstChild, 4.0);
 
-    printf("Дерево:\n");
+    printf("Tree:\n");
     printTree(root, 0);
 
     int width[100] = {0};
     findWidth(root, 0, width);
 
-    printf("Ширина дерева:\n");
+    printf("Tree's width:\n");
     for (int i = 0; i < 100; i++) {
         if (width[i] > 0) {
-            printf("Уровень %d: %d узлов\n", i, width[i]);
+            printf("Level %d: %d nodes\n", i, width[i]);
         }
     }
 

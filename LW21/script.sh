@@ -4,15 +4,15 @@ read -p "Введите название каталога: "  catalog
 
 if [ -s $catalog ];
 then
-    echo "Вы ввели какую-то фигню, дальше работаем с диском D";
-    catalog="D"; 
+    echo "Вы ввели какую-то фигню, дальше работаем со всем моим репозиторием";
+    catalog="Github"; 
 else 
     while [ -s $(find . -type d -name "$catalog") ];
     do 
         if [ -s $catalog ];
         then
-            echo "Вы ввели какую-то фигню, дальше работаем с диском D";
-            catalog="D";
+            echo "Вы ввели какую-то фигню, дальше работаем со всем моим репозиторием";
+            catalog="Github";
         else 
             echo "Эмм... Вы ввели что-то не то, попробуйте ещё раз";
             read catalog;
@@ -31,12 +31,9 @@ function rewrite {
             catalog=$arg;
             rewrite;
         else
-            if [ $arg = "Makefile" ];
+            if [ -e $arg ] && [ $arg = "Makefile" ];
             then
-                touch file.txt;
-                cat $arg | tr '/' '\\' > file.txt;
-                cat file.txt > $arg;
-                rm -f file.txt;
+                sed -i 's,/,\\,g' $(realpath $arg);
             fi;
         fi;
     done

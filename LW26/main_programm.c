@@ -111,35 +111,34 @@ int len(struct Deque* deque, struct Deque* help_deque) {
 }
 
 int maxElement(struct Deque* deque, struct Deque* help_deque) {
-    int buf = 0, max_element = INT_MIN, pos = 0;
+    int buf = 0, max_element = INT_MIN, pos = 0, c_pos, i;
     int d_len = len(deque, help_deque), len2 = d_len;
     if (d_len == -1) {
         return -1;
     }
     while (len2 > 0){
         max_element = INT_MIN;
-        for (int i = 0; i < len2; i++) {
-            buf = removeFront(deque);
+        for (i = 0; i < len2; i++) {
+            buf = removeRear(deque);
             if (buf >= max_element) {
                 max_element = buf;
                 pos = i;
             }
+            addFront(help_deque, buf);
+        }
+        for (i = 0; i < pos; i++){
+            buf = removeRear(help_deque);
             addRear(deque, buf);
         }
-        for (int i = 0; i < pos; i++){
-            buf = removeFront(deque);
-            addRear(deque, buf);
-        }
-        buf = removeFront(deque);
-        addFront(help_deque, buf);
-        len2--;
-    }
-    clearDeque(deque);
-    for (int i = 0; i < d_len; i++) {
         buf = removeRear(help_deque);
         addFront(deque, buf);
+        for (i = pos + 1; i < len2; i++) {
+            buf = removeFront(help_deque);
+            addRear(deque, buf);
+        }
+        clearDeque(help_deque);
+        len2--;
     }
-    clearDeque(help_deque);
     for (int i = 0; i < d_len; i++) {
         buf = removeFront(deque);
         printf("%d ", buf);

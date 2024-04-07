@@ -26,6 +26,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int max(int a, int b) {
+    if (a >= b) {
+        return a;
+    }
+    return b;
+}
+
 typedef struct Node {
     float data;
     struct Node* firstChild;
@@ -34,6 +41,10 @@ typedef struct Node {
 
 Node* createNode(float data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
+    if (!newNode) {
+        printf("Ошибка выделения памяти\n");
+        exit(1);
+    }
     newNode->data = data;
     newNode->firstChild = NULL;
     newNode->nextSibling = NULL;
@@ -41,15 +52,72 @@ Node* createNode(float data) {
 }
 
 void addChild(Node* parent, float data) {
-    Node* newChild = createNode(data);
-    if (parent->firstChild == NULL) {
-        parent->firstChild = newChild;
+    if (!parent) return;
+    Node* child = createNode(data);
+    if (!parent->firstChild) {
+        parent->firstChild = child;
     } else {
-        Node* sibling = parent->firstChild;
-        while (sibling->nextSibling != NULL) {
-            sibling = sibling->nextSibling;
+        Node* temp = parent->firstChild;
+        while (temp->nextSibling) {
+            temp = temp->nextSibling;
         }
-        sibling->nextSibling = newChild;
+        temp->nextSibling = child;
+    }
+}
+
+Node* findNode(Node* root, float data) {
+    if (!root) return NULL;
+    if (root->data == data) return root;
+    Node* found = findNode(root->firstChild, data);
+    if (found) return found;
+    return findNode(root->nextSibling, data);
+}
+
+Node* findNode2(Node* root, float data) {
+    if (!root) return NULL;
+    if (root->data == data) {
+        return root;
+    }
+    if (root->firstChild != NULL && root->nextSibling != NULL) {
+        if ((root->firstChild->data == data) || (root->nextSibling->data == data)){
+            return root;
+        }
+    }
+    else if (root->firstChild != NULL) {
+        if (root->firstChild->data == data){
+            return root;
+        }
+    }
+    else if (root->nextSibling != NULL) {
+        if (root->nextSibling->data == data){
+            return root;
+        }
+    }
+    Node* found = findNode2(root->firstChild, data);
+    if (found) return found;
+    return findNode2(root->nextSibling, data);
+}
+
+void addNode(Node** root) {
+    float parentData, childData;
+    printf("Введите родительский узел и значение нового узла (для корня введите 0.0 число): ");
+    if (scanf("%f %f", &parentData, &childData) != 2) {
+        printf("Некорректный ввод.\n");
+        exit(1);
+    }
+    if (parentData == 0) {
+        if (*root == NULL) {
+            *root = createNode(childData);
+        } else {
+            printf("Корень уже существует.\n");
+        }
+    } else {
+        Node* parent = findNode(*root, parentData);
+        if (parent) {
+            addChild(parent, childData);
+        } else {
+            printf("Родительский узел не найден.\n");
+        }
     }
 }
 
@@ -65,46 +133,100 @@ void printTree(Node* root, int level) {
     printTree(root->nextSibling, level);
 }
 
-void findWidth(Node* root, int level, int* width) {
-    if (root == NULL) {
-        return;
+int getWidth(Node* root) {
+    if (!root) {
+        return 0;
     }
-    width[level]++;
-    findWidth(root->firstChild, level + 1, width);
-    findWidth(root->nextSibling, level, width);
+    if (!root->firstChild) {
+        return 1;
+    }
+    int width = 0;
+    Node* sibling = root->firstChild;
+    while (sibling) {
+        width++;
+        sibling = sibling->nextSibling;
+    }
+    sibling = NULL;
+    return max(width, getWidth(root->firstChild));
 }
 
-void deleteNode(Node* root) {
+void deleteRoot(Node* root) {
     if (root == NULL){
         return;
     }
-    deleteNode(root->firstChild);
-    deleteNode(root->nextSibling);
+    deleteRoot(root->firstChild);
+    deleteRoot(root->nextSibling);
     free(root);
 }
 
+void print_menu() {
+    printf("What do you want to do?\n");
+    printf("1: Add a node\n");
+    printf("2: Print a tree\n");
+    printf("3: Find a tree's width\n");
+    printf("4: Delete node\n");
+    printf("5: Exit\n");
+    printf(">");
+}
+
 int main() {
-    Node* root = createNode(1.0);
-    addChild(root, 2.0);
-    addChild(root, 3.0);
-    addChild(root->firstChild, 4.0);
-
-    printf("Tree:\n");
-    printTree(root, 0);
-
-    int width[100] = {0};
-    findWidth(root, 0, width);
-
-    printf("Tree's width:\n");
-    for (int i = 0; i < 100; i++) {
-        if (width[i] > 0) {
-            printf("Level %d: %d nodes\n", i, width[i]);
+    Node* root = NULL;
+    int variant;
+    print_menu();
+    scanf("%d", &variant);
+    while (variant != 5){
+        switch(variant) {
+            case 1: 
+                addNode(&root);
+                break;
+            case 2:
+                printf("Tree:\n");
+                printTree(root, 0);
+                break;
+            case 3:
+                printf("Max width of the tree: %d\n", getWidth(root));
+                break;
+            case 4:
+                float data;
+                printf("Enter the node data to delete: ");
+                scanf("%f", &data);
+                Node *parent = findNode(root, data);
+                Node* grandparent = findNode2(root, data);
+                if (grandparent->firstChild == parent) {
+                    Node* reserve1 = parent->firstChild;
+                    if (parent->nextSibling != NULL) {
+                        reserve1 = parent->nextSibling;
+                        deleteRoot(parent->firstChild);
+                        grandparent->firstChild = reserve1;
+                        free(parent);
+                        parent = NULL;
+                    }
+                    else {
+                        deleteRoot(parent);
+                        parent = NULL;
+                        grandparent->firstChild = reserve1;
+                    }
+                }
+                else if (grandparent->nextSibling == parent) {
+                    Node* reserve1 = parent->nextSibling;
+                    deleteRoot(parent);
+                    parent = NULL;
+                    grandparent->nextSibling = reserve1;
+                }
+                else if (grandparent == parent) {
+                    deleteRoot(parent);
+                    parent = NULL;
+                    grandparent = NULL;
+                    root = NULL;
+                }
+                break;
         }
+        print_menu();
+        scanf("%d", &variant);
     }
-
-    deleteNode(root);
-
+    printf("Работа программы окончена\n");
+    deleteRoot(root);
     return 0;
 }
 ``` 
-8. Выводы: впервые за всё время я просрочил дедлайн на 5. Это произошло из-за сноса Windows при запуске Makefile за минуту до сдачи лабы. Что ж, теперь я знаю, что нельзя лишний раз лезть в ядро ОС, если не хочешь получить порцию седины на голову. Сама программа с горем пополам заработала, а с Makefile-ами я теперь предельно осторожен и лишний раз не трогаю.
+8. Выводы: впервые за всё время я просрочил дедлайн на 5. Это произошло из-за сноса Windows при запуске Makefile за минуту до сдачи лабы. Что ж, теперь я знаю, что нельзя лишний раз лезть в ядро ОС, если не хочешь получить порцию седины на голову. Сама программа с горем пополам заработала, а с Makefile-ами я теперь предельно осторожен и лишний раз не трогаю. Добавляю три недели спустя. Я СДЕЛАЛ ЭТО! И никогда я не буду работать с деревьями по своей воле!

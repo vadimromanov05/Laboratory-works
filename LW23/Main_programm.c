@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int max(int a, int b) {
+    if (a >= b) {
+        return a;
+    }
+    return b;
+}
+
 typedef struct Node {
     float data;
     struct Node* firstChild;
@@ -33,18 +40,6 @@ void addChild(Node* parent, float data) {
     }
 }
 
-void printTree(Node* root, int level) {
-    if (!root) return;
-    for (int i = 0; i < level; i++) printf(" ");
-    printf("%.2f\n", root->data);
-    if (root->firstChild) {
-        printTree(root->firstChild, level + 1);
-    }
-    if (root->nextSibling) {
-        printTree(root->nextSibling, level);
-    }
-}
-
 Node* findNode(Node* root, float data) {
     if (!root) return NULL;
     if (root->data == data) return root;
@@ -53,9 +48,34 @@ Node* findNode(Node* root, float data) {
     return findNode(root->nextSibling, data);
 }
 
+Node* findNode2(Node* root, float data) {
+    if (!root) return NULL;
+    if (root->data == data) {
+        return root;
+    }
+    if (root->firstChild != NULL && root->nextSibling != NULL) {
+        if ((root->firstChild->data == data) || (root->nextSibling->data == data)){
+            return root;
+        }
+    }
+    else if (root->firstChild != NULL) {
+        if (root->firstChild->data == data){
+            return root;
+        }
+    }
+    else if (root->nextSibling != NULL) {
+        if (root->nextSibling->data == data){
+            return root;
+        }
+    }
+    Node* found = findNode2(root->firstChild, data);
+    if (found) return found;
+    return findNode2(root->nextSibling, data);
+}
+
 void addNode(Node** root) {
     float parentData, childData;
-    printf("Введите родительский узел и значение нового узла (например, 1.5 2.3): ");
+    printf("Введите родительский узел и значение нового узла (для корня введите 0.0 число): ");
     if (scanf("%f %f", &parentData, &childData) != 2) {
         printf("Некорректный ввод.\n");
         exit(1);
@@ -76,65 +96,110 @@ void addNode(Node** root) {
     }
 }
 
-int get_variant() {
-    int variant;
-    char s[5];
-    scanf("%s", s);
-
-    while (sscanf(s, "%d", &variant) != 1 || variant < 1 || variant > 5) {
-        printf("Incorrect input. Try again: "); 
-        scanf("%s", s);
+void printTree(Node* root, int level) {
+    if (root == NULL) {
+        return;
     }
-
-    return variant;
+    for (int i = 0; i < level; i++) {
+        printf("  ");
+    }
+    printf("%f\n", root->data);
+    printTree(root->firstChild, level + 1);
+    printTree(root->nextSibling, level);
 }
 
-void deleteChild(Node *parent, Node *child) {
-    Node *current = parent->firstChild;
-    Node *prev = NULL;
-
-    while (current != child && current != NULL) {
-        prev = current;
-        current = current->nextSibling;
+int getWidth(Node* root) {
+    if (!root) {
+        return 0;
     }
-
-    if (current == child) {
-        if (prev == NULL) {
-            parent->firstChild = current->nextSibling;
-        } else {
-            prev->nextSibling = current->nextSibling;
-        }
-        free(current);
+    if (!root->firstChild) {
+        return 1;
     }
+    int width = 0;
+    Node* sibling = root->firstChild;
+    while (sibling) {
+        width++;
+        sibling = sibling->nextSibling;
+    }
+    sibling = NULL;
+    return max(width, getWidth(root->firstChild));
+}
+
+void deleteRoot(Node* root) {
+    if (root == NULL){
+        return;
+    }
+    deleteRoot(root->firstChild);
+    deleteRoot(root->nextSibling);
+    free(root);
+}
+
+void print_menu() {
+    printf("What do you want to do?\n");
+    printf("1: Add a node\n");
+    printf("2: Print a tree\n");
+    printf("3: Find a tree's width\n");
+    printf("4: Delete node\n");
+    printf("5: Exit\n");
+    printf(">");
 }
 
 int main() {
     Node* root = NULL;
     int variant;
+    print_menu();
+    scanf("%d", &variant);
     while (variant != 5){
-        printf("What do you want to do?\n");
-        printf("1: Add a root\n");
-        printf("2: Print a tree\n");
-        printf("3: Find a tree's width\n");
-        printf("4: Delete node\n");
-        printf("5: Exit\n");
-        printf(">");
-        variant = get_variant();
         switch(variant) {
-            case 1:
+            case 1: 
                 addNode(&root);
                 break;
             case 2:
+                printf("Tree:\n");
                 printTree(root, 0);
                 break;
             case 3:
+                printf("Max width of the tree: %d\n", getWidth(root));
                 break;
             case 4:
-                
-                deleteChild(parent, child);
+                float data;
+                printf("Enter the node data to delete: ");
+                scanf("%f", &data);
+                Node *parent = findNode(root, data);
+                Node* grandparent = findNode2(root, data);
+                if (grandparent->firstChild == parent) {
+                    Node* reserve1 = parent->firstChild;
+                    if (parent->nextSibling != NULL) {
+                        reserve1 = parent->nextSibling;
+                        deleteRoot(parent->firstChild);
+                        grandparent->firstChild = reserve1;
+                        free(parent);
+                        parent = NULL;
+                    }
+                    else {
+                        deleteRoot(parent);
+                        parent = NULL;
+                        grandparent->firstChild = reserve1;
+                    }
+                }
+                else if (grandparent->nextSibling == parent) {
+                    Node* reserve1 = parent->nextSibling;
+                    deleteRoot(parent);
+                    parent = NULL;
+                    grandparent->nextSibling = reserve1;
+                }
+                else if (grandparent == parent) {
+                    deleteRoot(parent);
+                    parent = NULL;
+                    grandparent = NULL;
+                    root = NULL;
+                }
                 break;
-            case 5:
-                system("pause");
         }
+        print_menu();
+        scanf("%d", &variant);
     }
+    printf("Работа программы окончена\n");
+    deleteRoot(root);
+    return 0;
 }

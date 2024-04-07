@@ -85,7 +85,7 @@ void printMenu() {
     printf("2. Добавить элемент в конец дека\n");
     printf("3. Удалить элемент с начала дека\n");
     printf("4. Удалить элемент с конца дека\n");
-    printf("5. Найти максимальный элемент\n");
+    printf("5. Сортировка дека\n");
     printf("6. Выход\n");
     printf(">");
 }
@@ -144,6 +144,7 @@ int maxElement(struct Deque* deque, struct Deque* help_deque) {
         printf("%d ", buf);
         addRear(deque, buf);
     }
+    
 }
 
 int main() {

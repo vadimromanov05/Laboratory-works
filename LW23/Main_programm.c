@@ -167,6 +167,9 @@ int main() {
                 scanf("%f", &data);
                 Node *parent = findNode(root, data);
                 Node* grandparent = findNode2(root, data);
+                if (grandparent == NULL) {
+                    break;
+                }
                 if (grandparent->firstChild == parent) {
                     Node* reserve1 = parent->firstChild;
                     if (parent->nextSibling != NULL) {

@@ -6,13 +6,13 @@ int max(int a, int b) {
         return a;
     }
     return b;
-}
+} /*это надо для максимальной ширины*/
 
 typedef struct Node {
     float data;
     struct Node* firstChild;
     struct Node* nextSibling;
-} Node;
+} Node; /*Просто создаём узел, дерева целиком как такового нет*/
 
 Node* createNode(float data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
@@ -24,7 +24,7 @@ Node* createNode(float data) {
     newNode->firstChild = NULL;
     newNode->nextSibling = NULL;
     return newNode;
-}
+} /*Это создание узла дерева*/
 
 void addChild(Node* parent, float data) {
     if (!parent) return;
@@ -38,7 +38,7 @@ void addChild(Node* parent, float data) {
         }
         temp->nextSibling = child;
     }
-}
+} /*Добавляем ребёнка к указанному родителю или же к старшему брату, но родитель всё равно как бы то же*/
 
 Node* findNode(Node* root, float data) {
     if (!root) return NULL;
@@ -46,7 +46,7 @@ Node* findNode(Node* root, float data) {
     Node* found = findNode(root->firstChild, data);
     if (found) return found;
     return findNode(root->nextSibling, data);
-}
+} /*Эта хрень нужна для поиска дедушки - родителя родителя, для добавления надо*/
 
 Node* findNode2(Node* root, float data) {
     if (!root) return NULL;
@@ -71,7 +71,7 @@ Node* findNode2(Node* root, float data) {
     Node* found = findNode2(root->firstChild, data);
     if (found) return found;
     return findNode2(root->nextSibling, data);
-}
+} /*Эта хрень нужна для поиска дедушки - родителя родителя, для удаления надо*/
 
 void addNode(Node** root) {
     float parentData, childData;
@@ -94,7 +94,7 @@ void addNode(Node** root) {
             printf("Родительский узел не найден.\n");
         }
     }
-}
+} /*Добавление нового ребёнка*/
 
 void printTree(Node* root, int level) {
     if (root == NULL) {
@@ -106,7 +106,7 @@ void printTree(Node* root, int level) {
     printf("%f\n", root->data);
     printTree(root->firstChild, level + 1);
     printTree(root->nextSibling, level);
-}
+} /*Печать дерева, работает, и ладно*/
 
 int getWidth(Node* root) {
     if (!root) {
@@ -123,7 +123,7 @@ int getWidth(Node* root) {
     }
     sibling = NULL;
     return max(width, getWidth(root->firstChild));
-}
+} /*Поиск максимальной ширины дерева*/
 
 void deleteRoot(Node* root) {
     if (root == NULL){
@@ -132,7 +132,7 @@ void deleteRoot(Node* root) {
     deleteRoot(root->firstChild);
     deleteRoot(root->nextSibling);
     free(root);
-}
+} /*Удаление узла дерева*/
 
 void print_menu() {
     printf("What do you want to do?\n");
@@ -142,7 +142,7 @@ void print_menu() {
     printf("4: Delete node\n");
     printf("5: Exit\n");
     printf(">");
-}
+} /*Печать менюшки*/
 
 int main() {
     Node* root = NULL;
@@ -198,7 +198,9 @@ int main() {
                     root = NULL;
                 }
                 break;
-        }
+        } 
+        /*Здесь мы искали дедушку или старшего брата старшего брата, чтобы привязать к нему отвалившиеся ссылки от
+        оставшегося дерева (младшие братья у удаляемого узла могут быть, и их надо спасти)*/
         print_menu();
         scanf("%d", &variant);
     }

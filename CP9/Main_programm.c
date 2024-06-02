@@ -1,13 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#define MAX_SIZE 20
-
-typedef struct {
-    float key;
-    char data[50];
-} Table;
+#include "table.h"
 
 void binaryInsert(Table table[], int n) {
     for (int i = 0; i < n; i++) {

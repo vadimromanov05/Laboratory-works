@@ -2,18 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+#include "tree.h"
 
-
-typedef struct _b_node {
-    int d_data;
-    char s_data;
-    struct _b_node* left;
-    struct _b_node* right;
-} Node;
-
-typedef struct tree {
-    Node* root;
-} Tree;
 
 Node* sign_create(char sign) {
     Node* node = (Node* )malloc(sizeof(Node));
